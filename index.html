@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shizu CoreFetch - متجر التطبيقات المعتمد على Shizuku</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Shizu CoreFetch: منصة مركزية متقدمة لجلب وإدارة التطبيقات التي تتطلب صلاحيات النظام الأساسية. يدعم محرك Shizuku للتثبيت الصامت والتحديثات.">
+    <meta name="keywords" content="Shizu CoreFetch, Shizuku, Android, app store, APK manager, تطبيقات, متجر">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <svg width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" />
+                <path d="M7 12h10M7 8h6M7 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            Shizu CoreFetch
+        </a>
+        <div class="nav-controls">
+            <div class="nav-links">
+                <a href="index.html" class="active">الرئيسية</a>
+                <a href="#features">المميزات</a>
+                <a href="#wallet">المحفظة</a>
+                <a href="#engines">المحرك</a>
+                <a href="privacy.html">الخصوصية</a>
+                <a href="contact.html">تواصل معنا</a>
+            </div>
+            <button id="theme-toggle" class="theme-btn" aria-label="تبديل المظهر"></button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text reveal">
+                <div class="hero-tag">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <path d="M9 12l2 2 4-4" />
+                    </svg>
+                    يعتمد على محرك Shizuku
+                </div>
+                <h1 class="hero-title">منصة مركزية لجلب وإدارة التطبيقات المتقدمة</h1>
+                <p class="hero-desc">
+                    Shizu CoreFetch هو متجر تطبيقات مفتوح المصدر يستخدم صلاحيات Shizuku لتثبيت التطبيقات وإدارتها بصمت. استمتع بتحميل التحديثات، إدارة الحزم المحلية، ومشاركة التطبيقات بكل سهولة وأمان.
+                </p>
+                <div class="btn-group">
+                    <a href="https://github.com/elhizazi1/ShizuCoreFetch/releases/latest" target="_blank" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
+                        </svg>
+                        تنزيل الإصدار الجديد
+                    </a>
+                    <a href="#features" class="btn btn-outline">استكشف المميزات</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal delay-1">
+                <div class="app-screenshot-slider">
+                    <img src="assets/screen/screen1.png" alt="واجهة المتجر الرئيسية" class="slide active">
+                    <img src="assets/screen/screen2.png" alt="واجهة التحديثات" class="slide">
+                    <img src="assets/screen/screen3.png" alt="المحفظة المحلية" class="slide">
+                    <img src="assets/screen/screen4.png" alt="إدارة الحزم" class="slide">
+                    <img src="assets/screen/screen5.png" alt="واجهة التحديثات" class="slide">
+                    <img src="assets/screen/screen6.png" alt="المحفظة المحلية" class="slide">
+                    <img src="assets/screen/screen7.png" alt="إدارة الحزم" class="slide">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section-padding">
+            <div class="section-header reveal">
+                <h2 class="section-title">أدوات إدارة التطبيقات المتكاملة</h2>
+                <p class="section-desc">مجموعة من الوظائف المصممة لتسهيل تثبيت، تحديث، وإدارة تطبيقاتك التي تتطلب صلاحيات النظام.</p>
+            </div>
+            <div class="grid-cards">
+                <div class="feature-card reveal delay-1">
+                    <div class="f-icon" style="background: var(--primary-light); color: var(--primary);">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                    </div>
+                    <h3 class="f-title">تثبيت صامت ومباشر</h3>
+                    <p class="f-desc">قم بتثبيت التطبيقات بصمت باستخدام صلاحية Shizuku دون الحاجة لتدخل يدوي. يدعم تنسيق APK وجميع إصدارات الأندرويد الحديثة.</p>
+                </div>
+                <div class="feature-card reveal delay-2">
+                    <div class="f-icon" style="background: var(--primary-light); color: var(--primary);">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 4 23 10 17 10" />
+                            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+                        </svg>
+                    </div>
+                    <h3 class="f-title">تحديثات ذكية</h3>
+                    <p class="f-desc">اكتشاف التحديثات تلقائياً من المستودع المركزي وتنبيهك فور توفر إصدارات جديدة لتطبيقاتك المثبتة.</p>
+                </div>
+                <div class="feature-card reveal delay-3">
+                    <div class="f-icon" style="background: var(--primary-light); color: var(--primary);">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                    </div>
+                    <h3 class="f-title">محفظة تخزين محلية</h3>
+                    <p class="f-desc">احفظ حزم التطبيقات محلياً، قم بمشاركتها، أو افتحها باستخدام أدوات خارجية. كل ذلك من خلال مدير ملفات بسيط وآمن.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wallet Highlight Section -->
+        <section id="wallet" class="section-padding">
+            <div class="section-header reveal">
+                <h2 class="section-title">محفظة التخزين المحلي</h2>
+                <p class="section-desc">أدر حزم APK المحفوظة لديك بسهولة. احذفها لتوفير المساحة، شاركها مع الأصدقاء، أو افتحها في تطبيقات خارجية.</p>
+            </div>
+            <div class="grid-cards">
+                <div class="feature-card reveal delay-1">
+                    <div class="f-icon" style="background: var(--status-error-bg); color: var(--status-error);">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="3 6 5 6 21 6" />
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                        </svg>
+                    </div>
+                    <h3 class="f-title">إدارة متقدمة للملفات</h3>
+                    <p class="f-desc">احذف الحزم نهائياً لتحرير مساحة التخزين. العملية آمنة وتتطلب تأكيداً صريحاً من المستخدم.</p>
+                </div>
+                <div class="feature-card reveal delay-2">
+                    <div class="f-icon" style="background: var(--status-info-bg); color: var(--status-info);">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="18" cy="5" r="3" />
+                            <circle cx="6" cy="12" r="3" />
+                            <circle cx="18" cy="19" r="3" />
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                        </svg>
+                    </div>
+                    <h3 class="f-title">مشاركة التطبيقات</h3>
+                    <p class="f-desc">شارك أي حزمة تطبيق مباشرة من المحفظة عبر البلوتوث، الواي فاي، أو أي تطبيق مشاركة على جهازك.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engine Section -->
+        <section id="engines" class="section-padding">
+            <div class="section-header reveal">
+                <h2 class="section-title">المحرك الأساسي: Shizuku</h2>
+                <p class="section-desc">يستخدم CoreFetch بروتوكولات Shizuku المتقدمة لتوفير تجربة سلسة وآمنة في إدارة التطبيقات دون الحاجة إلى صلاحيات Root.</p>
+            </div>
+            <div class="grid-cards" style="max-width: 700px; margin: 0 auto;">
+                <div class="feature-card reveal delay-1" style="text-align: center;">
+                    <div class="f-icon" style="background: var(--primary-light); color: var(--primary); margin: 0 auto 24px;">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="f-title">صلاحيات Shizuku</h3>
+                    <p class="f-desc">يمنح التطبيق صلاحيات على مستوى النظام لتثبيت وإدارة الحزم بصمت، مع حماية كاملة من إيقاف النظام للعمليات في الخلفية.</p>
+                    <div style="margin-top: 24px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                        <span style="background: var(--primary-light); color: var(--primary); padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 700;">تثبيت صامت</span>
+                        <span style="background: var(--primary-light); color: var(--primary); padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 700;">إلغاء تثبيت</span>
+                        <span style="background: var(--primary-light); color: var(--primary); padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 700;">تحديثات</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" />
+                    <path d="M7 12h10M7 8h6M7 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                Shizu CoreFetch
+            </div>
+            <div class="footer-content">تم التطوير بواسطة Jamal El Hizazi | جميع الحقوق محفوظة &copy; 2026</div>
+            <div class="footer-links">
+                <a href="privacy.html">الخصوصية</a>
+                <a href="terms.html">الشروط</a>
+                <a href="contact.html">تواصل معنا</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

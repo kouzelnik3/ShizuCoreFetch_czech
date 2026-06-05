@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - Shizu CoreFetch</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="تواصل مع فريق Shizu CoreFetch للاستفسارات أو الدعم الفني أو الإبلاغ عن المشاكل.">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <svg width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" />
+                <path d="M7 12h10M7 8h6M7 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            Shizu CoreFetch
+        </a>
+        <div class="nav-controls">
+            <div class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="privacy.html">الخصوصية</a>
+                <a href="terms.html">الشروط</a>
+                <a href="contact.html" class="active">تواصل معنا</a>
+            </div>
+            <button id="theme-toggle" class="theme-btn" aria-label="تبديل المظهر"></button>
+        </div>
+    </nav>
+
+    <div class="container page-top-padding">
+        <div class="reveal">
+            <h1 class="section-title">تواصل معنا</h1>
+            <p class="section-desc">نحن هنا للإجابة على استفساراتك واستقبال ملاحظاتك. لا تتردد في التواصل معنا بخصوص أي شيء يتعلق بـ Shizu CoreFetch.</p>
+        </div>
+        <div class="content-box reveal delay-1">
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('شكراً لتواصلك معنا! سيتم الرد عليك قريباً.'); this.reset();">
+                <div class="form-group">
+                    <label class="form-label" for="name">الاسم الكامل</label>
+                    <input type="text" id="name" class="form-control" placeholder="أدخل اسمك الكامل" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" class="form-control" placeholder="example@domain.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="subject">الموضوع</label>
+                    <input type="text" id="subject" class="form-control" placeholder="ما هو موضوع رسالتك؟" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="message">الرسالة</label>
+                    <textarea id="message" class="form-control" placeholder="اكتب رسالتك هنا..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+            </form>
+            <p style="margin-top: 30px; color: var(--text-dim); font-size: 16px; text-align: center;">
+                أو راسلنا مباشرة عبر البريد الإلكتروني: <a href="mailto:jamal@elhizazi.me" style="color: var(--primary); font-weight: 700;">jamal@elhizazi.me</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" />
+                    <path d="M7 12h10M7 8h6M7 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                Shizu CoreFetch
+            </div>
+            <div class="footer-content">تم التطوير بواسطة Jamal El Hizazi | جميع الحقوق محفوظة &copy; 2026</div>
+            <div class="footer-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="privacy.html">الخصوصية</a>
+                <a href="terms.html">الشروط</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
