@@ -118,6 +118,7 @@ Português (Portuguese) ✅ Complete
 Русский (Russian) ✅ Complete
 हिन्दी (Hindi) ✅ Complete
 中文 (Chinese) ✅ Complete
+日本語 (Japanese) ✅ Complete
 
 Missing a language? Contributions are welcome! See the Contribution Guide.
 
