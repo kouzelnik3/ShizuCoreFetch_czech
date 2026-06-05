@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основные тексты -->
+    <string name="app_name">Shizu CoreFetch</string>
+    <string name="main_title">Shizu CoreFetch</string>
+    <string name="main_description">Продвинутая централизованная платформа для получения и управления приложениями, требующими базовых (core) разрешений.</string>
+    <string name="main_login_github">Войти через GitHub</string>
+    <string name="main_boredom_title">Окно разработчика</string>
+    <string name="main_boredom_loading">Загрузка данных...</string>
+    <string name="main_boredom_initial_quote">Чистый код всегда читается как хорошо написанная проза. — Роберт К. Мартин</string>
+    <string name="store_title">Репозиторий Shizu</string>
+    <string name="store_btn_install">Установить</string>
+    <string name="store_developer_prefix">От: </string>
+    <string name="store_shizuku_not_running">Ядро Shizuku не запущено. Пожалуйста, сначала запустите его.</string>
+    <string name="store_shizuku_permission_denied">Для основных операций требуется разрешение Shizuku.</string>
+    <string name="store_shizuku_permission_granted">Ядро Shizuku успешно подключено.</string>
+    <string name="store_fetch_loading">Получение приложений из сети...</string>
+    <string name="store_fetch_failed_parse">Не удалось обработать данные</string>
+    <string name="store_fetch_error_network">Ошибка сети:</string>
+    <string name="installer_no_permission">Нет разрешения Shizuku для установки.</string>
+    <string name="installer_success">Успешно установлено!</string>
+    <string name="installer_fail">Ошибка установки: %1$s</string>
+    <string name="installer_error">Произошла ошибка: %1$s</string>
+    <string name="downloader_searching">Поиск последней версии...</string>
+    <string name="downloader_no_apk">В этом репозитории не найдено APK.</string>
+    <string name="downloader_downloading">Загрузка %1$s...</string>
+    <string name="downloader_success">Загрузка завершена, начало скрытой установки...</string>
+    <string name="downloader_fail">Ошибка загрузки: %1$s</string>
+    <string name="store_requesting_permission">Запрос разрешения Shizuku...</string>
+    <string name="install_button">Установить</string>
+    <string name="open_button">Открыть</string>
+    <string name="store_cannot_open">Невозможно открыть это приложение</string>
+    <string name="tools_app_name">Название приложения</string>
+    <string name="tools_app_developer">Имя разработчика</string>
+    <string name="tools_app_desc">Краткое описание приложения, четко и аккуратно отображающее его основные функции.</string>
+    <string name="installing_button">Установка…</string>
+    <string name="uninstall_button">Удалить</string>
+    <string name="update_button">Обновить</string>
+    <string name="app_description_title">Об этом приложении</string>
+    <string name="app_versions_title">Версии</string>
+    <string name="uninstall_success">Успешно удалено</string>
+    <string name="uninstall_fail">Ошибка удаления: %1$s</string>
+    <string name="store_search_hint">Поиск приложений…</string>
+    <string name="home_featured">Рекомендуемые</string>
+    <string name="home_all_apps">Все приложения</string>
+    <string name="login_guest">Войти как гость</string>
+    <string name="nav_home">Главная</string>
+    <string name="nav_store">Магазин</string>
+    <string name="nav_account">Аккаунт</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="account_loading">Загрузка…</string>
+    <string name="account_guest_name">Гость</string>
+    <string name="account_guest_email">Пожалуйста, войдите, чтобы получить доступ ко всем функциям</string>
+    <string name="account_installed_apps">Установленные приложения</string>
+    <string name="account_no_installed_apps">Вы еще не устанавливали приложения из магазина.</string>
+    <string name="account_updates_available">Доступны обновления</string>
+    <string name="account_no_updates">Все ваши приложения обновлены.</string>
+    <string name="account_logout">Выйти</string>
+    <string name="screenshots_title">Скриншоты</string>
+    <string name="preview_loading_text">Загрузка данных...</string>
+
+    <!-- Тексты настроек -->
+    <string name="settings_theme_title">Тема</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_system">Системная</string>
+    <string name="theme_dark">Тёмная</string>
+
+    <string name="settings_lang_title">Язык</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_pt">Português</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="lang_zh">中文</string>
+    <string name="lang_ja">日本語</string> 
+
+    <string name="settings_notif_title">Уведомления</string>
+    
+    <string name="settings_permissions_title">Разрешения</string>
+    <string name="settings_perm_apps">Информация об установленных приложениях</string>
+    <string name="settings_perm_shizuku">Разрешение Shizuku</string>
+
+    <string name="settings_about_store">О магазине</string>
+    <string name="settings_privacy">Политика конфиденциальности</string>
+    <string name="settings_terms">Условия использования</string>
+    <string name="settings_version">Версия 1.0.0</string>
+    <string name="settings_developer">От Jamal El Hizazi</string>
+
+    <string name="dialog_theme_title">Выберите тему</string>
+    <string name="dialog_lang_title">Выберите язык</string>
+
+    <string name="toast_shizuku_granted">Разрешение Shizuku уже предоставлено</string>
+    <string name="toast_shizuku_not_running">Shizuku не запущен, пожалуйста, запустите его</string>
+    <string name="toast_shizuku_error">Ошибка: Библиотека Shizuku недоступна</string>
+    
+    <string name="settings_category_general">Общие</string>
+    <string name="settings_category_about">Справка</string>
+
+<string name="notif_channel_ops_name">Операции магазина</string>
+<string name="notif_channel_ops_desc">Уведомления о фоновых загрузках и технических установках.</string>
+<string name="notif_channel_updates_name">Доступные обновления</string>
+<string name="notif_channel_updates_desc">Оповещения, когда новые версии доступны для установленных приложений.</string>
+<string name="notif_updates_available_title">Найдены обновления</string>
+<string name="notif_updates_available_msg">Доступно %1$d обновлений приложений, готовых к обработке.</string>
+
+<string name="nav_wallet">Локальное хранилище</string>
+<string name="wallet_empty">В локальном кэше в данный момент нет файлов приложений.</string>
+<string name="wallet_delete_title">Подтверждение удаления</string>
+<string name="wallet_delete_msg">Вы уверены, что хотите навсегда удалить установочный пакет для %1$s?</string>
+<string name="wallet_delete_success">Пакет успешно удалён.</string>
+<string name="wallet_share_title">Поделиться пакетом приложения</string>
+<string name="wallet_no_editor_found">На этом устройстве не найдено совместимого средства просмотра или редактора пакетов.</string>
+<string name="wallet_error_action">Не удалось запустить запрошенную операцию с файлом.</string>
+<string name="wallet_btn_delete">Удалить</string>
+<string name="wallet_btn_share">Поделиться</string>
+<string name="wallet_btn_open">Открыть во внешнем</string>
+<string name="dialog_cancel">Отмена</string>
+<string name="dialog_confirm">Подтвердить</string>
+
+</resources>

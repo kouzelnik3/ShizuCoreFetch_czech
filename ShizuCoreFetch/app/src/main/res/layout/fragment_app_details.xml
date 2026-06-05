@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:backgroundTint="@android:color/transparent"
+        app:elevation="0dp"
+        app:liftOnScroll="false"
+        android:stateListAnimator="@null">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDetails"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:navigationIcon="?attr/homeAsUpIndicator" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="80dp"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivDetailsBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginBottom="16dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:background="@android:color/transparent"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/iconContainerDetails"
+                            android:layout_width="76dp"
+                            android:layout_height="76dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cvDetailsIcon"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_gravity="center"
+                                app:cardBackgroundColor="@color/colorSurface"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/ivDetailsIcon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    tools:srcCompat="@tools:sample/avatars" />
+                            </androidx.cardview.widget.CardView>
+
+                            <com.google.android.material.progressindicator.CircularProgressIndicator
+                                android:id="@+id/pbDetailsProgress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                app:indicatorColor="@color/colorPrimary"
+                                app:indicatorSize="76dp"
+                                app:trackColor="@android:color/transparent"
+                                app:trackThickness="4dp"
+                                android:indeterminate="true" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tvDetailsName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:textColor="@color/colorOnSurface"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iconContainerDetails"
+                            app:layout_constraintTop_toTopOf="@+id/iconContainerDetails"
+                            tools:text="App Name" />
+
+                        <TextView
+                            android:id="@+id/tvDetailsDeveloper"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/tvDetailsName"
+                            app:layout_constraintTop_toBottomOf="@+id/tvDetailsName"
+                            tools:text="Developer Name" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnDetailsUninstall"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:text="@string/uninstall_button"
+                            android:textColor="@color/colorPrimary"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="@color/colorPrimary"
+                            app:strokeWidth="2dp"
+                            android:visibility="gone" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnDetailsInstall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/install_button"
+                            android:textColor="@color/colorOnPrimary"
+                            android:textStyle="bold"
+                            app:backgroundTint="@color/colorPrimary"
+                            app:cornerRadius="8dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@color/colorDivider" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_description_title"
+                        android:textColor="@color/colorOnSurface"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDetailsReadme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:textAlignment="viewStart"
+                        android:textDirection="locale"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textSize="14sp"
+                        tools:text="@string/preview_loading_text" />
+
+                    <TextView
+                        android:id="@+id/tvScreenshotsTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/screenshots_title"
+                        android:textColor="@color/colorOnSurface"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/hsvScreenshots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:clipToPadding="false"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/llScreenshots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/app_versions_title"
+                        android:textColor="@color/colorOnSurface"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvVersions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:nestedScrollingEnabled="false" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

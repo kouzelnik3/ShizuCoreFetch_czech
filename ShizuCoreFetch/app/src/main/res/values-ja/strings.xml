@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基本テキスト -->
+    <string name="app_name">Shizu CoreFetch</string>
+    <string name="main_title">Shizu CoreFetch</string>
+    <string name="main_description">コア権限が必要なアプリケーションを取得・管理するための高度な集中プラットフォーム。</string>
+    <string name="main_login_github">GitHubでログイン</string>
+    <string name="main_boredom_title">開発者ウィンドウ</string>
+    <string name="main_boredom_loading">データを読み込み中...</string>
+    <string name="main_boredom_initial_quote">クリーンなコードは、常に良く書かれた散文のように読める。 - ロバート・C・マーティン</string>
+    <string name="store_title">Shizu リポジトリ</string>
+    <string name="store_btn_install">インストール</string>
+    <string name="store_developer_prefix">作成者: </string>
+    <string name="store_shizuku_not_running">Shizukuエンジンが動作していません。最初に起動してください。</string>
+    <string name="store_shizuku_permission_denied">コア操作にはShizukuの許可が必要です。</string>
+    <string name="store_shizuku_permission_granted">Shizukuエンジンと正常に連携しました。</string>
+    <string name="store_fetch_loading">ネットワークからアプリを取得中...</string>
+    <string name="store_fetch_failed_parse">データの解析に失敗しました</string>
+    <string name="store_fetch_error_network">ネットワークエラー:</string>
+    <string name="installer_no_permission">インストールのためのShizuku権限がありません。</string>
+    <string name="installer_success">インストールが完了しました！</string>
+    <string name="installer_fail">インストールに失敗しました: %1$s</string>
+    <string name="installer_error">エラーが発生しました: %1$s</string>
+    <string name="downloader_searching">最新リリースを検索中...</string>
+    <string name="downloader_no_apk">このリポジトリにAPKが見つかりません。</string>
+    <string name="downloader_downloading">%1$s をダウンロード中...</string>
+    <string name="downloader_success">ダウンロード完了、サイレントインストールを開始します...</string>
+    <string name="downloader_fail">ダウンロードに失敗しました: %1$s</string>
+    <string name="store_requesting_permission">Shizuku権限を要求中...</string>
+    <string name="install_button">インストール</string>
+    <string name="open_button">開く</string>
+    <string name="store_cannot_open">このアプリを開けません</string>
+    <string name="tools_app_name">アプリ名</string>
+    <string name="tools_app_developer">開発者名</string>
+    <string name="tools_app_desc">主な機能を明確かつ簡潔に示すアプリの短い説明。</string>
+    <string name="installing_button">インストール中…</string>
+    <string name="uninstall_button">アンインストール</string>
+    <string name="update_button">更新</string>
+    <string name="app_description_title">このアプリについて</string>
+    <string name="app_versions_title">バージョン</string>
+    <string name="uninstall_success">アンインストールが完了しました</string>
+    <string name="uninstall_fail">アンインストールに失敗しました: %1$s</string>
+    <string name="store_search_hint">アプリを検索…</string>
+    <string name="home_featured">おすすめ</string>
+    <string name="home_all_apps">すべてのアプリ</string>
+    <string name="login_guest">ゲストとして閲覧</string>
+    <string name="nav_home">ホーム</string>
+    <string name="nav_store">ストア</string>
+    <string name="nav_account">アカウント</string>
+    <string name="nav_settings">設定</string>
+    <string name="account_loading">読み込み中…</string>
+    <string name="account_guest_name">ゲスト</string>
+    <string name="account_guest_email">すべての機能にアクセスするにはログインしてください</string>
+    <string name="account_installed_apps">インストール済みアプリ</string>
+    <string name="account_no_installed_apps">ストアからインストールされたアプリはまだありません。</string>
+    <string name="account_updates_available">利用可能なアップデート</string>
+    <string name="account_no_updates">すべてのアプリが最新です。</string>
+    <string name="account_logout">ログアウト</string>
+    <string name="screenshots_title">スクリーンショット</string>
+    <string name="preview_loading_text">データを読み込み中...</string>
+
+    <!-- 設定画面 -->
+    <string name="settings_theme_title">テーマ</string>
+    <string name="theme_light">ライト</string>
+    <string name="theme_system">システム</string>
+    <string name="theme_dark">ダーク</string>
+
+    <string name="settings_lang_title">言語</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_pt">Português</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="lang_zh">中文</string>
+    <string name="lang_ja">日本語</string>
+
+    <string name="settings_notif_title">通知</string>
+    
+    <string name="settings_permissions_title">権限</string>
+    <string name="settings_perm_apps">インストール済みアプリ情報</string>
+    <string name="settings_perm_shizuku">Shizuku権限</string>
+
+    <string name="settings_about_store">ストアについて</string>
+    <string name="settings_privacy">プライバシーポリシー</string>
+    <string name="settings_terms">利用規約</string>
+    <string name="settings_version">バージョン 1.0.0</string>
+    <string name="settings_developer">作成者: Jamal El Hizazi</string>
+
+    <string name="dialog_theme_title">テーマを選択</string>
+    <string name="dialog_lang_title">言語を選択</string>
+
+    <string name="toast_shizuku_granted">Shizuku権限は既に付与されています</string>
+    <string name="toast_shizuku_not_running">Shizukuが動作していません。起動してください</string>
+    <string name="toast_shizuku_error">エラー: Shizukuライブラリが利用できません</string>
+    
+    <string name="settings_category_general">一般</string>
+    <string name="settings_category_about">について</string>
+
+    <string name="notif_channel_ops_name">ストア操作</string>
+    <string name="notif_channel_ops_desc">バックグラウンドダウンロードと技術的なインストールの通知。</string>
+    <string name="notif_channel_updates_name">利用可能なアップデート</string>
+    <string name="notif_channel_updates_desc">インストール済みアプリに新しいバージョンが利用可能な場合のお知らせ。</string>
+    <string name="notif_updates_available_title">アップデートが見つかりました</string>
+    <string name="notif_updates_available_msg">%1$d件のアプリ更新が処理待ちです。</string>
+
+    <string name="nav_wallet">ローカルストレージウォレット</string>
+    <string name="wallet_empty">現在ローカルキャッシュにアプリファイルは保存されていません。</string>
+    <string name="wallet_delete_title">削除の確認</string>
+    <string name="wallet_delete_msg">%1$sのインストールパッケージを完全に削除してもよろしいですか？</string>
+    <string name="wallet_delete_success">パッケージが正常に削除されました。</string>
+    <string name="wallet_share_title">アプリパッケージを共有</string>
+    <string name="wallet_no_editor_found">このデバイスには互換性のあるパッケージビューアまたはエディタが見つかりません。</string>
+    <string name="wallet_error_action">要求されたファイル操作の開始に失敗しました。</string>
+    <string name="wallet_btn_delete">削除</string>
+    <string name="wallet_btn_share">共有</string>
+    <string name="wallet_btn_open">外部で開く</string>
+    <string name="dialog_cancel">キャンセル</string>
+    <string name="dialog_confirm">確認</string>
+</resources>

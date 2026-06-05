@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- मुख्य पाठ -->
+    <string name="app_name">Shizu CoreFetch</string>
+    <string name="main_title">Shizu CoreFetch</string>
+    <string name="main_description">कोर (मूल) अनुमतियों की आवश्यकता वाले एप्लिकेशन प्राप्त करने और प्रबंधित करने के लिए एक उन्नत केंद्रीकृत मंच।</string>
+    <string name="main_login_github">GitHub के साथ लॉगिन करें</string>
+    <string name="main_boredom_title">डेवलपर विंडो</string>
+    <string name="main_boredom_loading">डेटा लोड हो रहा है...</string>
+    <string name="main_boredom_initial_quote">स्वच्छ कोड हमेशा अच्छी तरह से लिखे गए गद्य की तरह पढ़ा जाता है। - रॉबर्ट सी. मार्टिन</string>
+    <string name="store_title">Shizu रिपॉजिटरी</string>
+    <string name="store_btn_install">इंस्टॉल करें</string>
+    <string name="store_developer_prefix">द्वारा: </string>
+    <string name="store_shizuku_not_running">Shizuku इंजन नहीं चल रहा है। कृपया पहले इसे शुरू करें।</string>
+    <string name="store_shizuku_permission_denied">कोर संचालन के लिए Shizuku अनुमति की आवश्यकता है।</string>
+    <string name="store_shizuku_permission_granted">Shizuku इंजन सफलतापूर्वक लिंक हो गया।</string>
+    <string name="store_fetch_loading">नेटवर्क से ऐप्स प्राप्त किए जा रहे हैं...</string>
+    <string name="store_fetch_failed_parse">डेटा पार्स करने में विफल</string>
+    <string name="store_fetch_error_network">नेटवर्क त्रुटि:</string>
+    <string name="installer_no_permission">स्थापना के लिए कोई Shizuku अनुमति नहीं है।</string>
+    <string name="installer_success">सफलतापूर्वक इंस्टॉल हो गया!</string>
+    <string name="installer_fail">स्थापना विफल: %1$s</string>
+    <string name="installer_error">त्रुटि हुई: %1$s</string>
+    <string name="downloader_searching">नवीनतम रिलीज़ की खोज की जा रही है...</string>
+    <string name="downloader_no_apk">इस रिपॉजिटरी में कोई APK नहीं मिला।</string>
+    <string name="downloader_downloading">%1$s डाउनलोड हो रहा है...</string>
+    <string name="downloader_success">डाउनलोड पूरा हुआ, साइलेंट इंस्टॉल शुरू हो रहा है...</string>
+    <string name="downloader_fail">डाउनलोड विफल: %1$s</string>
+    <string name="store_requesting_permission">Shizuku अनुमति का अनुरोध किया जा रहा है...</string>
+    <string name="install_button">इंस्टॉल करें</string>
+    <string name="open_button">खोलें</string>
+    <string name="store_cannot_open">यह ऐप नहीं खोला जा सकता</string>
+    <string name="tools_app_name">ऐप का नाम</string>
+    <string name="tools_app_developer">डेवलपर का नाम</string>
+    <string name="tools_app_desc">ऐप का एक संक्षिप्त विवरण जो इसकी मुख्य विशेषताओं को स्पष्ट और साफ तरीके से प्रदर्शित करता है।</string>
+    <string name="installing_button">इंस्टॉल हो रहा है…</string>
+    <string name="uninstall_button">अनइंस्टॉल करें</string>
+    <string name="update_button">अपडेट करें</string>
+    <string name="app_description_title">इस ऐप के बारे में</string>
+    <string name="app_versions_title">संस्करण</string>
+    <string name="uninstall_success">सफलतापूर्वक अनइंस्टॉल किया गया</string>
+    <string name="uninstall_fail">अनइंस्टॉल विफल: %1$s</string>
+    <string name="store_search_hint">ऐप्स खोजें…</string>
+    <string name="home_featured">विशेष रुप से प्रदर्शित</string>
+    <string name="home_all_apps">सभी एप्लिकेशन</string>
+    <string name="login_guest">अतिथि के रूप में ब्राउज़ करें</string>
+    <string name="nav_home">होम</string>
+    <string name="nav_store">स्टोर</string>
+    <string name="nav_account">अकाउंट</string>
+    <string name="nav_settings">सेटिंग्स</string>
+    <string name="account_loading">लोड हो रहा है…</string>
+    <string name="account_guest_name">अतिथि</string>
+    <string name="account_guest_email">सभी सुविधाओं तक पहुँचने के लिए कृपया लॉगिन करें</string>
+    <string name="account_installed_apps">इंस्टॉल किए गए ऐप्स</string>
+    <string name="account_no_installed_apps">स्टोर से अभी तक कोई ऐप इंस्टॉल नहीं किया गया है।</string>
+    <string name="account_updates_available">अपडेट उपलब्ध हैं</string>
+    <string name="account_no_updates">आपके सभी ऐप अप टू डेट हैं।</string>
+    <string name="account_logout">लॉग आउट</string>
+    <string name="screenshots_title">स्क्रीनशॉट</string>
+    <string name="preview_loading_text">डेटा लोड हो रहा है...</string>
+
+    <!-- सेटिंग्स पाठ -->
+    <string name="settings_theme_title">थीम</string>
+    <string name="theme_light">लाइट</string>
+    <string name="theme_system">सिस्टम</string>
+    <string name="theme_dark">डार्क</string>
+
+    <string name="settings_lang_title">भाषा</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_pt">Português</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="lang_zh">中文</string>
+    <string name="lang_ja">日本語</string> 
+
+    <string name="settings_notif_title">सूचनाएं</string>
+    
+    <string name="settings_permissions_title">अनुमतियाँ</string>
+    <string name="settings_perm_apps">इंस्टॉल किए गए ऐप्स की जानकारी</string>
+    <string name="settings_perm_shizuku">Shizuku अनुमति</string>
+
+    <string name="settings_about_store">स्टोर के बारे में</string>
+    <string name="settings_privacy">गोपनीयता नीति</string>
+    <string name="settings_terms">उपयोग की शर्तें</string>
+    <string name="settings_version">संस्करण 1.0.0</string>
+    <string name="settings_developer">Jamal El Hizazi द्वारा</string>
+
+    <string name="dialog_theme_title">थीम चुनें</string>
+    <string name="dialog_lang_title">भाषा चुनें</string>
+
+    <string name="toast_shizuku_granted">Shizuku अनुमति पहले ही दी जा चुकी है</string>
+    <string name="toast_shizuku_not_running">Shizuku नहीं चल रहा है, कृपया इसे शुरू करें</string>
+    <string name="toast_shizuku_error">त्रुटि: Shizuku लाइब्रेरी उपलब्ध नहीं है</string>
+    
+    <string name="settings_category_general">सामान्य</string>
+    <string name="settings_category_about">के बारे में</string>
+
+<string name="notif_channel_ops_name">स्टोर संचालन</string>
+<string name="notif_channel_ops_desc">पृष्ठभूमि डाउनलोड और तकनीकी इंस्टॉलेशन के लिए सूचनाएं।</string>
+<string name="notif_channel_updates_name">उपलब्ध अपडेट</string>
+<string name="notif_channel_updates_desc">जब आपके इंस्टॉल किए गए ऐप्स के लिए नए संस्करण उपलब्ध हों तब अलर्ट।</string>
+<string name="notif_updates_available_title">अपडेट मिले</string>
+<string name="notif_updates_available_msg">प्रोसेसिंग के लिए %1$d एप्लिकेशन अपडेट तैयार हैं।</string>
+
+<string name="nav_wallet">स्थानीय भंडारण वॉलेट</string>
+<string name="wallet_empty">स्थानीय कैश में वर्तमान में कोई एप्लिकेशन फ़ाइल संग्रहीत नहीं है।</string>
+<string name="wallet_delete_title">हटाने की पुष्टि करें</string>
+<string name="wallet_delete_msg">क्या आप वाकई %1$s के लिए इंस्टॉलेशन पैकेज को स्थायी रूप से हटाना चाहते हैं?</string>
+<string name="wallet_delete_success">पैकेज सफलतापूर्वक हटा दिया गया।</string>
+<string name="wallet_share_title">एप्लिकेशन पैकेज साझा करें</string>
+<string name="wallet_no_editor_found">इस डिवाइस पर कोई संगत पैकेज व्यूअर या एडिटर नहीं मिला।</string>
+<string name="wallet_error_action">अनुरोधित फ़ाइल ऑपरेशन प्रारंभ करने में विफल।</string>
+<string name="wallet_btn_delete">हटाएं</string>
+<string name="wallet_btn_share">साझा करें</string>
+<string name="wallet_btn_open">बाहरी रूप से खोलें</string>
+<string name="dialog_cancel">रद्द करें</string>
+<string name="dialog_confirm">पुष्टि करें</string>
+
+</resources>

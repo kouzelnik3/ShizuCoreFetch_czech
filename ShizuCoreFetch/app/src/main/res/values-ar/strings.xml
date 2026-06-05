@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shizu CoreFetch</string>
+    <string name="main_title">Shizu CoreFetch</string>
+    <string name="main_description">منصة مركزية متقدمة لجلب وإدارة التطبيقات التي تتطلب صلاحيات النظام الأساسية.</string>
+    <string name="main_login_github">تسجيل الدخول باستخدام GitHub</string>
+    <string name="main_boredom_title">نافذة المطور</string>
+    <string name="main_boredom_loading">جاري تحميل البيانات...</string>
+    <string name="main_boredom_initial_quote">الكود النظيف يُقرأ دائماً كأنه نثر مكتوب بعناية. - روبرت سي. مارتن</string>
+    
+    <string name="store_title">مستودع Shizu</string>
+    <string name="store_btn_install">تثبيت</string>
+    <string name="store_developer_prefix">بواسطة: </string>
+    <string name="store_shizuku_not_running">محرك Shizuku لا يعمل. يرجى تشغيله أولاً.</string>
+    <string name="store_shizuku_permission_denied">صلاحية Shizuku مطلوبة للعمليات الأساسية.</string>
+    <string name="store_shizuku_permission_granted">تم ربط محرك Shizuku بنجاح.</string>
+    <string name="store_fetch_loading">جاري جلب التطبيقات من الشبكة...</string>
+    <string name="store_fetch_failed_parse">فشل في تحليل البيانات</string>
+    <string name="store_fetch_error_network">خطأ في الشبكة: </string>
+    <string name="installer_no_permission">لا توجد صلاحية Shizuku للتثبيت.</string>
+    <string name="installer_success">تم التثبيت بنجاح!</string>
+    <string name="installer_fail">فشل التثبيت: %1$s</string>
+    <string name="installer_error">حدث خطأ: %1$s</string>
+    
+    <string name="downloader_searching">جاري البحث عن أحدث إصدار...</string>
+    <string name="downloader_no_apk">لم يتم العثور على ملف APK في هذا المستودع.</string>
+    <string name="downloader_downloading">جاري تحميل %1$s...</string>
+    <string name="downloader_success">اكتمل التحميل، جاري بدء التثبيت الصامت...</string>
+    <string name="downloader_fail">فشل التحميل: %1$s</string>
+    
+    <string name="store_requesting_permission">جاري طلب صلاحية Shizuku...</string>
+    <string name="install_button">تثبيت</string>
+    <string name="open_button">فتح</string>
+    <string name="store_cannot_open">لا يمكن فتح هذا التطبيق</string>
+    <string name="tools_app_name">اسم التطبيق</string>
+    <string name="tools_app_developer">اسم المطور</string>
+    <string name="tools_app_desc">وصف قصير للتطبيق يعرض ميزاته الرئيسية بشكل واضح ومنسق.</string>
+    <string name="installing_button">جاري التثبيت…</string>
+    <string name="uninstall_button">إلغاء التثبيت</string>
+    <string name="update_button">تحديث</string>
+    <string name="app_description_title">حول هذا التطبيق</string>
+    <string name="app_versions_title">الإصدارات</string>
+    <string name="uninstall_success">تم إلغاء التثبيت بنجاح</string>
+    <string name="uninstall_fail">فشل إلغاء التثبيت: %1$s</string>
+    <string name="store_search_hint">البحث عن تطبيقات…</string>
+    <string name="home_featured">مميز</string>
+    <string name="home_all_apps">جميع التطبيقات</string>
+    
+    <string name="login_guest">تصفح كضيف</string>
+    <string name="account_loading">جاري التحميل…</string>
+    <string name="account_guest_name">ضيف</string>
+    <string name="account_guest_email">يرجى تسجيل الدخول للوصول إلى جميع الميزات</string>
+    <string name="account_installed_apps">التطبيقات المثبتة</string>
+    <string name="account_no_installed_apps">لا توجد تطبيقات مثبتة من المتجر بعد.</string>
+    <string name="account_updates_available">التحديثات المتاحة</string>
+    <string name="account_no_updates">جميع تطبيقاتك محدثة.</string>
+    <string name="account_logout">تسجيل الخروج</string>
+    <string name="screenshots_title">لقطات الشاشة</string>
+    <string name="preview_loading_text">جاري تحميل البيانات...</string>
+    
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_store">المتجر</string>
+    <string name="nav_account">الحساب</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <string name="settings_theme_title">المظهر</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_system">حسب النظام</string>
+    <string name="theme_dark">داكن</string>
+
+    <string name="settings_lang_title">اللغة</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_pt">Português</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="lang_zh">中文</string>
+    <string name="lang_ja">日本語</string> 
+
+    <string name="settings_notif_title">الإشعارات</string>
+    
+    <string name="settings_permissions_title">الصلاحيات</string>
+    <string name="settings_perm_apps">معلومات التطبيقات المثبتة</string>
+    <string name="settings_perm_shizuku">صلاحية شيزوكو</string>
+
+    <string name="settings_about_store">حول المتجر</string>
+    <string name="settings_privacy">سياسة الخصوصية</string>
+    <string name="settings_terms">شروط الاستخدام</string>
+    <string name="settings_version">الإصدار 1.0.0</string>
+    <string name="settings_developer">بواسطة جمال الحزازي</string>
+
+    <string name="dialog_theme_title">اختر المظهر</string>
+    <string name="dialog_lang_title">اختر اللغة</string>
+
+    <string name="toast_shizuku_granted">صلاحية شيزوكو ممنوحة بالفعل</string>
+    <string name="toast_shizuku_not_running">تطبيق Shizuku لا يعمل حالياً، يرجى تشغيله</string>
+    <string name="toast_shizuku_error">حدث خطأ: مكتبة Shizuku غير متوفرة</string>
+    
+    <string name="settings_category_general">عام</string>
+    <string name="settings_category_about">حول</string>
+
+    <string name="notif_channel_ops_name">عمليات المتجر</string>
+    <string name="notif_channel_ops_desc">إشعارات عمليات التحميل في الخلفية والتثبيت التقني.</string>
+    <string name="notif_channel_updates_name">التحديثات المتوفرة</string>
+    <string name="notif_channel_updates_desc">تنبيهات عند توفر إصدارات جديدة للتطبيقات المثبتة لديك.</string>
+    <string name="notif_updates_available_title">تحديثات متوفرة</string>
+    <string name="notif_updates_available_msg">يوجد %1$d تحديثات جديدة جاهزة للمعالجة.</string>
+
+    <string name="nav_wallet">محفظة التخزين المحلي</string>
+    <string name="wallet_empty">لا توجد ملفات حزم تطبيقات مخزنة في الذاكرة المؤقتة حالياً.</string>
+    <string name="wallet_delete_title">تأكيد الحذف</string>
+    <string name="wallet_delete_msg">هل أنت متأكد من رغبتك في حذف حزمة التثبيت الخاصة بتطبيق %1$s نهائياً؟</string>
+    <string name="wallet_delete_success">تم حذف الملف بنجاح لتوفير مساحة.</string>
+    <string name="wallet_share_title">مشاركة حزمة التطبيق</string>
+    <string name="wallet_no_editor_found">لم يتم العثور على تطبيق متوافق أو محرر ملفات لفتح الحزمة.</string>
+    <string name="wallet_error_action">تعذر تنفيذ الإجراء المطلوب على الملف.</string>
+    <string name="wallet_btn_delete">مسح</string>
+    <string name="wallet_btn_share">مشاركة</string>
+    <string name="wallet_btn_open">فتح خارجي</string>
+    <string name="dialog_cancel">إلغاء</string>
+    <string name="dialog_confirm">تأكيد</string>
+
+</resources>

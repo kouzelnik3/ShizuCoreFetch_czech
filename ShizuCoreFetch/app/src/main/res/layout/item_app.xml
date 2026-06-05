@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="?android:attr/listDivider"
+    app:cardBackgroundColor="?attr/colorSurface">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <FrameLayout
+            android:id="@+id/iconContainer"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAppIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivAppIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/pbDownloadProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:indicatorColor="?attr/colorPrimary"
+                app:indicatorSize="64dp"
+                app:trackColor="#00000000"
+                app:trackThickness="4.5dp"
+                android:indeterminate="true" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/btnInstall"
+            app:layout_constraintStart_toEndOf="@+id/iconContainer"
+            app:layout_constraintTop_toTopOf="@+id/iconContainer"
+            tools:text="@string/tools_app_name" />
+
+        <TextView
+            android:id="@+id/tvAppDeveloper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/btnInstall"
+            app:layout_constraintStart_toStartOf="@+id/tvAppName"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppName"
+            tools:text="@string/tools_app_developer" />
+
+        <TextView
+            android:id="@+id/tvAppDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="2"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnInstall"
+            app:layout_constraintStart_toStartOf="@+id/tvAppName"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppDeveloper"
+            tools:text="@string/tools_app_desc" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnInstall"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingHorizontal="16dp"
+            android:text="@string/install_button"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:backgroundTint="?attr/colorPrimary"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iconContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iconContainer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

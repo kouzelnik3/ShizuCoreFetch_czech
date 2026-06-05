@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础文本 -->
+    <string name="app_name">Shizu CoreFetch</string>
+    <string name="main_title">Shizu CoreFetch</string>
+    <string name="main_description">一个高级的集中式平台，用于获取和管理需要核心权限的应用程序。</string>
+    <string name="main_login_github">使用 GitHub 登录</string>
+    <string name="main_boredom_title">开发者窗口</string>
+    <string name="main_boredom_loading">正在加载数据...</string>
+    <string name="main_boredom_initial_quote">整洁的代码读起来总是像写得很好的散文。 - Robert C. Martin</string>
+    <string name="store_title">Shizu 仓库</string>
+    <string name="store_btn_install">安装</string>
+    <string name="store_developer_prefix">作者：</string>
+    <string name="store_shizuku_not_running">Shizuku 引擎未运行。请先启动它。</string>
+    <string name="store_shizuku_permission_denied">核心操作需要 Shizuku 权限。</string>
+    <string name="store_shizuku_permission_granted">Shizuku 引擎已成功连接。</string>
+    <string name="store_fetch_loading">正在从网络获取应用...</string>
+    <string name="store_fetch_failed_parse">解析数据失败</string>
+    <string name="store_fetch_error_network">网络错误：</string>
+    <string name="installer_no_permission">没有用于安装的 Shizuku 权限。</string>
+    <string name="installer_success">安装成功！</string>
+    <string name="installer_fail">安装失败：%1$s</string>
+    <string name="installer_error">发生错误：%1$s</string>
+    <string name="downloader_searching">正在寻找最新版本...</string>
+    <string name="downloader_no_apk">在此仓库中未找到 APK。</string>
+    <string name="downloader_downloading">正在下载 %1$s...</string>
+    <string name="downloader_success">下载完成，开始静默安装...</string>
+    <string name="downloader_fail">下载失败：%1$s</string>
+    <string name="store_requesting_permission">正在请求 Shizuku 权限...</string>
+    <string name="install_button">安装</string>
+    <string name="open_button">打开</string>
+    <string name="store_cannot_open">无法打开此应用</string>
+    <string name="tools_app_name">应用名称</string>
+    <string name="tools_app_developer">开发者名称</string>
+    <string name="tools_app_desc">应用的简短描述，清晰整洁地展示其主要功能。</string>
+    <string name="installing_button">正在安装…</string>
+    <string name="uninstall_button">卸载</string>
+    <string name="update_button">更新</string>
+    <string name="app_description_title">关于此应用</string>
+    <string name="app_versions_title">版本</string>
+    <string name="uninstall_success">卸载成功</string>
+    <string name="uninstall_fail">卸载失败：%1$s</string>
+    <string name="store_search_hint">搜索应用…</string>
+    <string name="home_featured">精选</string>
+    <string name="home_all_apps">所有应用</string>
+    <string name="login_guest">以访客身份浏览</string>
+    <string name="nav_home">首页</string>
+    <string name="nav_store">商店</string>
+    <string name="nav_account">账户</string>
+    <string name="nav_settings">设置</string>
+    <string name="account_loading">正在加载…</string>
+    <string name="account_guest_name">访客</string>
+    <string name="account_guest_email">请登录以访问所有功能</string>
+    <string name="account_installed_apps">已安装应用</string>
+    <string name="account_no_installed_apps">尚未安装来自商店的任何应用。</string>
+    <string name="account_updates_available">可用更新</string>
+    <string name="account_no_updates">您的所有应用都是最新版本。</string>
+    <string name="account_logout">登出</string>
+    <string name="screenshots_title">屏幕截图</string>
+    <string name="preview_loading_text">正在加载数据...</string>
+
+    <!-- 设置文本 -->
+    <string name="settings_theme_title">主题</string>
+    <string name="theme_light">浅色</string>
+    <string name="theme_system">跟随系统</string>
+    <string name="theme_dark">深色</string>
+
+    <string name="settings_lang_title">语言</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_pt">Português</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="lang_zh">中文</string>
+    <string name="lang_ja">日本語</string> 
+
+    <string name="settings_notif_title">通知</string>
+    
+    <string name="settings_permissions_title">权限</string>
+    <string name="settings_perm_apps">已安装应用信息</string>
+    <string name="settings_perm_shizuku">Shizuku 权限</string>
+
+    <string name="settings_about_store">关于商店</string>
+    <string name="settings_privacy">隐私政策</string>
+    <string name="settings_terms">使用条款</string>
+    <string name="settings_version">版本 1.0.0</string>
+    <string name="settings_developer">作者：Jamal El Hizazi</string>
+
+    <string name="dialog_theme_title">选择主题</string>
+    <string name="dialog_lang_title">选择语言</string>
+
+    <string name="toast_shizuku_granted">Shizuku 权限已被授予</string>
+    <string name="toast_shizuku_not_running">Shizuku 未运行，请启动它</string>
+    <string name="toast_shizuku_error">错误：Shizuku 库不可用</string>
+    
+    <string name="settings_category_general">常规</string>
+    <string name="settings_category_about">关于</string>
+<string name="notif_channel_ops_name">商店运营</string>
+<string name="notif_channel_ops_desc">后台下载和技术安装的通知。</string>
+<string name="notif_channel_updates_name">可用更新</string>
+<string name="notif_channel_updates_desc">当您安装的应用程序有新版本可用时发出提醒。</string>
+<string name="notif_updates_available_title">发现更新</string>
+<string name="notif_updates_available_msg">有 %1$d 个应用程序更新等待处理。</string>
+
+<string name="nav_wallet">本地存储钱包</string>
+<string name="wallet_empty">本地缓存中当前没有存储任何应用程序文件。</string>
+<string name="wallet_delete_title">确认删除</string>
+<string name="wallet_delete_msg">您确定要永久删除 %1$s 的安装包吗？</string>
+<string name="wallet_delete_success">包已成功移除。</string>
+<string name="wallet_share_title">分享应用程序包</string>
+<string name="wallet_no_editor_found">此设备上未发现兼容的包查看器或编辑器。</string>
+<string name="wallet_error_action">启动请求的文件操作失败。</string>
+<string name="wallet_btn_delete">删除</string>
+<string name="wallet_btn_share">分享</string>
+<string name="wallet_btn_open">外部打开</string>
+<string name="dialog_cancel">取消</string>
+<string name="dialog_confirm">确认</string>
+</resources>

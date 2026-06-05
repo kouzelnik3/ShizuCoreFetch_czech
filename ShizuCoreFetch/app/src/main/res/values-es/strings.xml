@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Textos básicos -->
+    <string name="app_name">Shizu CoreFetch</string>
+    <string name="main_title">Shizu CoreFetch</string>
+    <string name="main_description">Una plataforma centralizada avanzada para obtener y administrar aplicaciones que requieren permisos centrales.</string>
+    <string name="main_login_github">Iniciar sesión con GitHub</string>
+    <string name="main_boredom_title">Ventana de Desarrollador</string>
+    <string name="main_boredom_loading">Cargando datos...</string>
+    <string name="main_boredom_initial_quote">El código limpio siempre se lee como prosa bien escrita. - Robert C. Martin</string>
+    <string name="store_title">Repositorio Shizu</string>
+    <string name="store_btn_install">Instalar</string>
+    <string name="store_developer_prefix">Por: </string>
+    <string name="store_shizuku_not_running">El motor Shizuku no se está ejecutando. Por favor, inícielo primero.</string>
+    <string name="store_shizuku_permission_denied">Se requiere el permiso de Shizuku para operaciones centrales.</string>
+    <string name="store_shizuku_permission_granted">Motor Shizuku enlazado exitosamente.</string>
+    <string name="store_fetch_loading">Obteniendo aplicaciones de la red...</string>
+    <string name="store_fetch_failed_parse">Error al analizar los datos</string>
+    <string name="store_fetch_error_network">Error de red:</string>
+    <string name="installer_no_permission">Sin permiso de Shizuku para la instalación.</string>
+    <string name="installer_success">¡Instalado exitosamente!</string>
+    <string name="installer_fail">Error en la instalación: %1$s</string>
+    <string name="installer_error">Ocurrió un error: %1$s</string>
+    <string name="downloader_searching">Buscando la última versión...</string>
+    <string name="downloader_no_apk">No se encontró ningún APK en este repositorio.</string>
+    <string name="downloader_downloading">Descargando %1$s...</string>
+    <string name="downloader_success">Descarga completa, iniciando instalación silenciosa...</string>
+    <string name="downloader_fail">Error en la descarga: %1$s</string>
+    <string name="store_requesting_permission">Solicitando permiso de Shizuku...</string>
+    <string name="install_button">Instalar</string>
+    <string name="open_button">Abrir</string>
+    <string name="store_cannot_open">No se puede abrir esta aplicación</string>
+    <string name="tools_app_name">Nombre de la aplicación</string>
+    <string name="tools_app_developer">Nombre del desarrollador</string>
+    <string name="tools_app_desc">Una breve descripción de la aplicación que muestra sus características principales de manera clara y ordenada.</string>
+    <string name="installing_button">Instalando…</string>
+    <string name="uninstall_button">Desinstalar</string>
+    <string name="update_button">Actualizar</string>
+    <string name="app_description_title">Acerca de esta aplicación</string>
+    <string name="app_versions_title">Versiones</string>
+    <string name="uninstall_success">Desinstalado exitosamente</string>
+    <string name="uninstall_fail">Error al desinstalar: %1$s</string>
+    <string name="store_search_hint">Buscar aplicaciones…</string>
+    <string name="home_featured">Destacado</string>
+    <string name="home_all_apps">Todas las aplicaciones</string>
+    <string name="login_guest">Navegar como invitado</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_store">Tienda</string>
+    <string name="nav_account">Cuenta</string>
+    <string name="nav_settings">Ajustes</string>
+    <string name="account_loading">Cargando…</string>
+    <string name="account_guest_name">Invitado</string>
+    <string name="account_guest_email">Inicia sesión para acceder a todas las funciones</string>
+    <string name="account_installed_apps">Aplicaciones instaladas</string>
+    <string name="account_no_installed_apps">Aún no hay aplicaciones instaladas desde la tienda.</string>
+    <string name="account_updates_available">Actualizaciones disponibles</string>
+    <string name="account_no_updates">Todas tus aplicaciones están actualizadas.</string>
+    <string name="account_logout">Cerrar sesión</string>
+    <string name="screenshots_title">Capturas de pantalla</string>
+    <string name="preview_loading_text">Cargando datos...</string>
+
+    <!-- Textos de ajustes -->
+    <string name="settings_theme_title">Tema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_system">Sistema</string>
+    <string name="theme_dark">Oscuro</string>
+
+    <string name="settings_lang_title">Idioma</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_pt">Português</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="lang_zh">中文</string>
+    <string name="lang_ja">日本語</string> 
+
+    <string name="settings_notif_title">Notificaciones</string>
+    
+    <string name="settings_permissions_title">Permisos</string>
+    <string name="settings_perm_apps">Información de apps instaladas</string>
+    <string name="settings_perm_shizuku">Permiso de Shizuku</string>
+
+    <string name="settings_about_store">Acerca de la Tienda</string>
+    <string name="settings_privacy">Política de Privacidad</string>
+    <string name="settings_terms">Términos de Uso</string>
+    <string name="settings_version">Versión 1.0.0</string>
+    <string name="settings_developer">Por Jamal El Hizazi</string>
+
+    <string name="dialog_theme_title">Elegir Tema</string>
+    <string name="dialog_lang_title">Elegir Idioma</string>
+
+    <string name="toast_shizuku_granted">El permiso de Shizuku ya está concedido</string>
+    <string name="toast_shizuku_not_running">Shizuku no se está ejecutando, por favor inícialo</string>
+    <string name="toast_shizuku_error">Error: La biblioteca de Shizuku no está disponible</string>
+    
+    <string name="settings_category_general">General</string>
+    <string name="settings_category_about">Acerca de</string>
+
+<string name="notif_channel_ops_name">Operaciones de la tienda</string>
+<string name="notif_channel_ops_desc">Notificaciones para descargas en segundo plano e instalaciones técnicas.</string>
+<string name="notif_channel_updates_name">Actualizaciones disponibles</string>
+<string name="notif_channel_updates_desc">Alertas cuando hay nuevas versiones disponibles para tus aplicaciones instaladas.</string>
+<string name="notif_updates_available_title">Actualizaciones encontradas</string>
+<string name="notif_updates_available_msg">Hay %1$d actualizaciones de aplicaciones listas para procesar.</string>
+
+<string name="nav_wallet">Cartera de almacenamiento local</string>
+<string name="wallet_empty">No hay archivos de aplicaciones almacenados actualmente en la caché local.</string>
+<string name="wallet_delete_title">Confirmar eliminación</string>
+<string name="wallet_delete_msg">¿Estás seguro de que deseas eliminar permanentemente el paquete de instalación de %1$s?</string>
+<string name="wallet_delete_success">Paquete eliminado correctamente.</string>
+<string name="wallet_share_title">Compartir paquete de aplicación</string>
+<string name="wallet_no_editor_found">No se encontró ningún visor o editor de paquetes compatible en este dispositivo.</string>
+<string name="wallet_error_action">Error al iniciar la operación de archivo solicitada.</string>
+<string name="wallet_btn_delete">Eliminar</string>
+<string name="wallet_btn_share">Compartir</string>
+<string name="wallet_btn_open">Abrir externo</string>
+<string name="dialog_cancel">Cancelar</string>
+<string name="dialog_confirm">Confirmar</string>
+</resources>
