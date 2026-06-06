@@ -5,8 +5,8 @@
   "short_description": "An advanced Shizuku-based Android app manager and installer.",
   "detailed_description": "ShizuCoreFetch is a powerful tool designed to manage and install Android applications seamlessly. Utilizing the Shizuku API, it allows you to bypass standard installation restrictions and manage your apps like a pro.\n\n**Key Features:**\n- Silent and background APK installations via Shizuku.\n- Fetch and download the latest app releases directly from GitHub.\n- Local APK wallet for managing, extracting, and sharing apps.\n- Fast and responsive Material Design UI.",
   
-  "icon_url": "https://raw.githubusercontent.com/elhizazi1/ShizuCoreFetch/main/assets/icon.png",
-  "banner_url": "https://raw.githubusercontent.com/elhizazi1/ShizuCoreFetch/main/assets/banner_main.png",
+  "icon_url": "https://shizucorefetch.siwane.xyz/assets/icon.png",
+  "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
   
   "developer": {
     "name": "Jamal El Hizazi",
@@ -15,20 +15,20 @@
   "repo_url": "https://github.com/elhizazi1/ShizuCoreFetch",
   
   "screenshots": [
-    "assets/screen/screen1.png",
-    "assets/screen/screen2.png",
-    "assets/screen/screen3.png",
-    "assets/screen/screen4.png",
-    "assets/screen/screen5.png",
-    "assets/screen/screen6.png",
-    "assets/screen/screen7.png"
+    "https://shizucorefetch.siwane.xyz/assets/screen/screen1.png",
+    "https://shizucorefetch.siwane.xyz/assets/screen/screen2.png",
+    "https://shizucorefetch.siwane.xyz/assets/screen/screen3.png",
+    "https://shizucorefetch.siwane.xyz/assets/screen/screen4.png",
+    "https://shizucorefetch.siwane.xyz/assets/screen/screen5.png",
+    "https://shizucorefetch.siwane.xyz/assets/screen/screen6.png",
+    "https://shizucorefetch.siwane.xyz/assets/screen/screen7.png"
   ],
   
   "locales": {
     "ar": {
       "short_description": "أداة متقدمة لإدارة وتثبيت التطبيقات عبر صلاحيات Shizuku.",
       "detailed_description": "تطبيق ShizuCoreFetch هو أداتك الشاملة لإدارة وتثبيت تطبيقات أندرويد بسلاسة. من خلال الاستفادة من صلاحيات Shizuku، يتيح لك التطبيق تجاوز قيود التثبيت التقليدية وإدارة تطبيقاتك باحترافية.\n\n**أهم المميزات:**\n- تثبيت صامت في الخلفية لملفات APK عبر Shizuku.\n- جلب وتنزيل أحدث الإصدارات مباشرة من مستودعات جيتهب.\n- محفظة تخزين محلية لإدارة، استخراج، ومشاركة ملفات التطبيقات.\n- واجهة مستخدم سريعة وعصرية تتوافق مع معايير Material Design.",
-      "banner_url": "https://raw.githubusercontent.com/elhizazi1/ShizuCoreFetch/main/assets/banner_main.png"
+      "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png"
     }
   }
 }
