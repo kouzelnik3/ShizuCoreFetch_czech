@@ -1,7 +1,9 @@
 <svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- الخلفية -->
   <rect width="1200" height="900" fill="#121212" />
   
   <defs>
+    <!-- تأثير اللمعان على الخلفية -->
     <linearGradient id="shimmer" x1="-100%" y1="0" x2="0%" y2="0">
       <stop offset="0%" stop-color="#1E1E1E" />
       <stop offset="50%" stop-color="#2C2C2C" />
@@ -13,13 +15,16 @@
 
   <rect width="1200" height="900" fill="url(#shimmer)" />
 
+  <!-- أيقونة الإضافة -->
   <g transform="translate(550, 320) scale(4)" fill="#00d1b2">
     <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
   </g>
 
-  <text id="text-main" x="600" y="550" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle" opacity="1"></text>
-  <text id="text-sub" x="600" y="650" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle" opacity="1"></text>
+  <!-- النصوص: سنغير text-anchor ديناميكياً حسب اللغة -->
+  <text id="text-main" x="600" y="550" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff"></text>
+  <text id="text-sub" x="600" y="650" font-family="sans-serif" font-size="32" fill="#a0a0a0"></text>
 
+  <!-- الإطار الخارجي -->
   <rect width="1196" height="896" x="2" y="2" fill="none" stroke="#333333" stroke-width="4" rx="16" />
 
   <script type="application/javascript"><![CDATA[
@@ -27,71 +32,52 @@
       { 
         title: "مساحة إعلانية متاحة", 
         desc: 'تواصل مع إدارة "صوان" لحجز هذه المساحة', 
-        dir: "rtl" 
+        align: "end"    // RTL يظهر من اليمين (نقطة النهاية في المركز)
       },
       { 
         title: "Advertising space available", 
         desc: "Contact Siwane management to reserve this space", 
-        dir: "ltr" 
+        align: "start"  // LTR يبدأ من المركز لليسار
       }
     ];
 
     const mainEl = document.getElementById("text-main");
     const subEl = document.getElementById("text-sub");
 
-    // تعيين اتجاه النص بشكل صحيح باستخدام CSS
-    function setDirection(el, dir) {
-      el.style.direction = dir;
-      el.style.unicodeBidi = dir === "rtl" ? "embed" : "normal";
-    }
-
-    // تأثير تلاشي تدريجي
-    function fadeOut(el, duration = 400) {
-      return new Promise(resolve => {
-        el.style.transition = `opacity ${duration}ms`;
-        el.style.opacity = 0;
-        setTimeout(() => {
-          el.textContent = "";
-          el.style.opacity = 1;
-          el.style.transition = "none";
-          resolve();
-        }, duration);
-      });
-    }
-
-    async function typeText(el, text, speed, showCursor = true) {
+    // دالة كتابة النص حرفاً حرفاً مع مؤشر وامض
+    async function typeText(el, text, speed) {
       el.textContent = "";
-      let cursor = showCursor ? "|" : "";
-      for (let i = 0; i <= text.length; i++) {
-        el.textContent = text.substring(0, i) + (i < text.length ? cursor : "");
+      for (let i = 0; i < text.length; i++) {
+        el.textContent = text.substring(0, i + 1) + "|";
         await new Promise(r => setTimeout(r, speed));
-        // إيقاف المؤشر آخر حرف لفترة أطول قليلاً
-        if (i === text.length - 1) await new Promise(r => setTimeout(r, 300));
       }
       // إزالة المؤشر بعد الانتهاء
       el.textContent = text;
     }
 
+    // دورة لا نهائية تتنقل بين اللغتين
     async function startLoop() {
       let i = 0;
       while (true) {
-        let item = data[i % 2];
-        
-        setDirection(mainEl, item.dir);
-        setDirection(subEl, item.dir);
+        const item = data[i % 2];
 
-        await typeText(mainEl, item.title, 80);  // سرعة معدّلة
-        await typeText(subEl, item.desc, 40);    // سرعة معدّلة للوصف
-        
-        // الانتظار 6 ثوانٍ قبل الإخفاء
-        await new Promise(r => setTimeout(r, 6000));
-        
-        // إخفاء تدريجي
-        await fadeOut(mainEl, 500);
-        await fadeOut(subEl, 500);
-        
-        // فاصل بسيط قبل الجملة التالية
-        await new Promise(r => setTimeout(r, 500));
+        // ضبط محاذاة النص حسب اللغة (بدون استخدام direction)
+        mainEl.setAttribute("text-anchor", item.align);
+        subEl.setAttribute("text-anchor", item.align);
+
+        // كتابة العنوان والوصف
+        await typeText(mainEl, item.title, 80);
+        await typeText(subEl, item.desc, 45);
+
+        // إبقاء النص ظاهراً لمدة 5 ثوانٍ للقراءة
+        await new Promise(r => setTimeout(r, 5000));
+
+        // مسح النصوص استعداداً للجملة التالية
+        mainEl.textContent = "";
+        subEl.textContent = "";
+
+        // فاصل قصير 300 مللي ثانية قبل البدء بالجملة الجديدة
+        await new Promise(r => setTimeout(r, 300));
         i++;
       }
     }
