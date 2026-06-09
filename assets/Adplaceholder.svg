@@ -1,6 +1,6 @@
 <svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
   <rect width="1200" height="900" fill="#121212" />
-
+  
   <defs>
     <linearGradient id="shimmer" x1="-100%" y1="0" x2="0%" y2="0">
       <stop offset="0%" stop-color="#1E1E1E" />
@@ -17,82 +17,56 @@
     <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
   </g>
 
-  <text id="line1" x="600" y="550" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle"></text>
-  <text id="line2" x="600" y="550" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle"></text>
-  
-  <text id="line3" x="600" y="650" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle"></text>
-  <text id="line4" x="600" y="650" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle"></text>
-  
+  <text id="text-main" x="600" y="550" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle"></text>
+  <text id="text-sub" x="600" y="650" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle"></text>
+
   <rect width="1196" height="896" x="2" y="2" fill="none" stroke="#333333" stroke-width="4" rx="16" />
 
-  <script type="application/javascript">
-    // تخزين النصوص المطلوبة
-    const textData = {
-      arabTitle: "مساحة إعلانية متاحة",
-      arabDesc: 'تواصل مع إدارة "صوان" لحجز هذه المساحة',
-      engTitle: "Advertising space available",
-      engDesc: "Contact Siwane management to reserve this space"
-    };
+  <script type="application/javascript"><![CDATA[
+    const data = [
+      { 
+        title: "مساحة إعلانية متاحة", 
+        desc: 'تواصل مع إدارة "صوان" لحجز هذه المساحة', 
+        dir: "rtl" 
+      },
+      { 
+        title: "Advertising space available", 
+        desc: "Contact Siwane management to reserve this space", 
+        dir: "ltr" 
+      }
+    ];
 
-    const typeSpeed = 50; // سرعة كتابة الحرف بالملي ثانية
-    const displayTime = 8000; // وقت بقاء النص على الشاشة (8 ثواني)
+    const mainEl = document.getElementById("text-main");
+    const subEl = document.getElementById("text-sub");
 
-    // دالة لمسح كل الشاشة
-    function clearScreen() {
-      document.getElementById("line1").textContent = "";
-      document.getElementById("line2").textContent = "";
-      document.getElementById("line3").textContent = "";
-      document.getElementById("line4").textContent = "";
-    }
-
-    // دالة لكتابة النص حرفاً بحرف
-    function typeWriter(elementId, text) {
-      return new Promise(resolve => {
-        const el = document.getElementById(elementId);
-        let i = 0;
-        function type() {
-          if (i &lt; text.length) {
-            el.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, typeSpeed);
-          } else {
-            resolve(); // انتهت الكتابة
-          }
-        }
-        type();
-      });
-    }
-
-    // دالة للانتظار (8 ثواني)
-    function sleep(ms) {
-      return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-    // الدورة الرئيسية التي لا تنتهي
-    async function startAnimation() {
-      // إخفاء كل شيء في البداية
-      clearScreen();
-
-      while (true) {
-        // ===== المرحلة الأولى: النص العربي =====
-        await typeWriter("line1", textData.arabTitle); // يكتب العنوان العربي
-        await sleep(300); // استراحة قصيرة جداً للعين
-        await typeWriter("line3", textData.arabDesc); // يكتب الوصف العربي
-        
-        await sleep(displayTime); // ينتظر 8 ثواني
-        clearScreen(); // يمسح الشاشة
-
-        // ===== المرحلة الثانية: النص الإنجليزي =====
-        await typeWriter("line2", textData.engTitle); // يكتب العنوان الإنجليزي
-        await sleep(300); 
-        await typeWriter("line4", textData.engDesc); // يكتب الوصف الإنجليزي
-        
-        await sleep(displayTime); // ينتظر 8 ثواني
-        clearScreen(); // يمسح الشاشة لتبدأ الدورة من جديد
+    async function typeText(el, text, speed) {
+      el.textContent = "";
+      for (let char of text) {
+        el.textContent += char;
+        await new Promise(r => setTimeout(r, speed));
       }
     }
 
-    // تشغيل الدورة بمجرد تحميل الصورة
-    window.addEventListener("load", startAnimation);
-  </script>
+    async function startLoop() {
+      let i = 0;
+      while (true) {
+        let item = data[i % 2];
+        
+        // ضبط الاتجاه لضمان الكتابة الصحيحة (يمين/يسار)
+        mainEl.setAttribute("direction", item.dir);
+        subEl.setAttribute("direction", item.dir);
+
+        await typeText(mainEl, item.title, 100);
+        await typeText(subEl, item.desc, 50);
+        
+        await new Promise(r => setTimeout(r, 8000));
+        
+        mainEl.textContent = "";
+        subEl.textContent = "";
+        i++;
+      }
+    }
+
+    startLoop();
+  ]]></script>
 </svg>
