@@ -3,7 +3,7 @@
   <rect width="1200" height="900" fill="#121212" />
   
   <defs>
-    <!-- تأثير اللمعان على الخلفية -->
+    <!-- تأثير اللمعان -->
     <linearGradient id="shimmer" x1="-100%" y1="0" x2="0%" y2="0">
       <stop offset="0%" stop-color="#1E1E1E" />
       <stop offset="50%" stop-color="#2C2C2C" />
@@ -15,73 +15,86 @@
 
   <rect width="1200" height="900" fill="url(#shimmer)" />
 
-  <!-- أيقونة الإضافة -->
+  <!-- الأيقونة -->
   <g transform="translate(550, 320) scale(4)" fill="#00d1b2">
     <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
   </g>
 
-  <!-- النصوص: سنغير text-anchor ديناميكياً حسب اللغة -->
-  <text id="text-main" x="600" y="550" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff"></text>
-  <text id="text-sub" x="600" y="650" font-family="sans-serif" font-size="32" fill="#a0a0a0"></text>
+  <!-- عناصر النص (سيتم تعديلها ديناميكياً) -->
+  <text id="text-main" x="600" y="550" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff"></text>
+  <text id="text-sub" x="600" y="650" font-family="Arial, sans-serif" font-size="32" fill="#a0a0a0"></text>
 
   <!-- الإطار الخارجي -->
   <rect width="1196" height="896" x="2" y="2" fill="none" stroke="#333333" stroke-width="4" rx="16" />
 
   <script type="application/javascript"><![CDATA[
-    const data = [
+    var data = [
       { 
         title: "مساحة إعلانية متاحة", 
         desc: 'تواصل مع إدارة "صوان" لحجز هذه المساحة', 
-        align: "end"    // RTL يظهر من اليمين (نقطة النهاية في المركز)
+        align: "end"     // RTL: يبدأ من اليمين
       },
       { 
         title: "Advertising space available", 
         desc: "Contact Siwane management to reserve this space", 
-        align: "start"  // LTR يبدأ من المركز لليسار
+        align: "start"   // LTR: يبدأ من اليسار
       }
     ];
 
-    const mainEl = document.getElementById("text-main");
-    const subEl = document.getElementById("text-sub");
+    var mainEl = document.getElementById("text-main");
+    var subEl = document.getElementById("text-sub");
+    var index = 0;
+    var busy = false; // لمنع التداخل
 
-    // دالة كتابة النص حرفاً حرفاً مع مؤشر وامض
-    async function typeText(el, text, speed) {
+    // دالة كتابة حرف بحرف مع مؤشر
+    function typeText(el, text, speed, callback) {
+      var i = 0;
       el.textContent = "";
-      for (let i = 0; i < text.length; i++) {
-        el.textContent = text.substring(0, i + 1) + "|";
-        await new Promise(r => setTimeout(r, speed));
+      function addChar() {
+        if (i < text.length) {
+          el.textContent = text.substring(0, i + 1) + "|";
+          i++;
+          setTimeout(addChar, speed);
+        } else {
+          el.textContent = text; // إزالة المؤشر بعد الانتهاء
+          if (callback) callback();
+        }
       }
-      // إزالة المؤشر بعد الانتهاء
-      el.textContent = text;
+      addChar();
     }
 
-    // دورة لا نهائية تتنقل بين اللغتين
-    async function startLoop() {
-      let i = 0;
-      while (true) {
-        const item = data[i % 2];
+    // عرض جملة كاملة (عنوان + وصف)
+    function showItem(item, done) {
+      // ضبط المحاذاة حسب اللغة
+      mainEl.setAttribute("text-anchor", item.align);
+      subEl.setAttribute("text-anchor", item.align);
 
-        // ضبط محاذاة النص حسب اللغة (بدون استخدام direction)
-        mainEl.setAttribute("text-anchor", item.align);
-        subEl.setAttribute("text-anchor", item.align);
-
-        // كتابة العنوان والوصف
-        await typeText(mainEl, item.title, 80);
-        await typeText(subEl, item.desc, 45);
-
-        // إبقاء النص ظاهراً لمدة 5 ثوانٍ للقراءة
-        await new Promise(r => setTimeout(r, 5000));
-
-        // مسح النصوص استعداداً للجملة التالية
-        mainEl.textContent = "";
-        subEl.textContent = "";
-
-        // فاصل قصير 300 مللي ثانية قبل البدء بالجملة الجديدة
-        await new Promise(r => setTimeout(r, 300));
-        i++;
-      }
+      typeText(mainEl, item.title, 80, function() {
+        typeText(subEl, item.desc, 45, function() {
+          if (done) done();
+        });
+      });
     }
 
-    startLoop();
+    // الانتقال إلى الجملة التالية
+    function next() {
+      if (busy) return;
+      busy = true;
+      var item = data[index % 2];
+      showItem(item, function() {
+        // بعد انتهاء الكتابة، اترك النص ظاهراً 5 ثوانٍ
+        setTimeout(function() {
+          mainEl.textContent = "";
+          subEl.textContent = "";
+          busy = false;
+          index++;
+          // فاصل قصير ثم ابدأ الجملة التالية
+          setTimeout(next, 300);
+        }, 5000);
+      });
+    }
+
+    // بدء الحلقة
+    next();
   ]]></script>
 </svg>
