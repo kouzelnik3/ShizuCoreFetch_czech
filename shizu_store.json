@@ -17,7 +17,6 @@
       "target_url": "https://your-target-website-or-app.com/promo"
     }
   ],
-  "developerBanner": "https://shizucorefetch.siwane.xyz/assets/coverture.jpg",
   "developer_message": "Crafting smart tools that give users full control over their devices. Thank you for your trust and support!",
   "icon_url": "https://shizucorefetch.siwane.xyz/assets/icon.png",
   "banner_url": "https://shizucorefetch.siwane.xyz/assets/banner_main.png",
@@ -25,6 +24,7 @@
   "store_issue_number": 1,
   "developer": {
     "name": "Jamal El Hizazi",
+    "banner_url": "https://shizucorefetch.siwane.xyz/assets/coverture.jpg",
     "account_url": "https://github.com/elhizazi1",
     "email": "jamal@elhizazi.me",
     "website": "https://siwane.xyz",
