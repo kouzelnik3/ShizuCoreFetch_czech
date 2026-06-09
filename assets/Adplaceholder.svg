@@ -17,44 +17,82 @@
     <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
   </g>
 
-  <text id="line1" x="600" y="550" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">مساحة إعلانية متاحة</text>
-  <text id="line2" x="600" y="610" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">Advertising space available</text>
+  <text id="line1" x="600" y="550" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle"></text>
+  <text id="line2" x="600" y="550" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle"></text>
   
-  <text id="line3" x="600" y="680" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle">تواصل مع إدارة "صوان" لحجز هذه المساحة</text>
-  <text id="line4" x="600" y="730" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle">Contact Siwane management to reserve this space</text>
+  <text id="line3" x="600" y="650" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle"></text>
+  <text id="line4" x="600" y="650" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle"></text>
   
   <rect width="1196" height="896" x="2" y="2" fill="none" stroke="#333333" stroke-width="4" rx="16" />
 
   <script type="application/javascript">
-    const lines = ["line1", "line2", "line3", "line4"];
-    const speeds = [150, 100, 80, 60]; // سرعات الكتابة بالملي ثانية
-    let lineIndex = 0;
+    // تخزين النصوص المطلوبة
+    const textData = {
+      arabTitle: "مساحة إعلانية متاحة",
+      arabDesc: 'تواصل مع إدارة "صوان" لحجز هذه المساحة',
+      engTitle: "Advertising space available",
+      engDesc: "Contact Siwane management to reserve this space"
+    };
 
-    function typeLine() {
-      if (lineIndex &gt;= lines.length) return;
-      const currentId = lines[lineIndex];
-      const speed = speeds[lineIndex];
-      const textElement = document.getElementById(currentId);
-      const text = textElement.textContent;
-      textElement.textContent = ""; // مسح النص الأصلي
-      let charIndex = 0;
+    const typeSpeed = 50; // سرعة كتابة الحرف بالملي ثانية
+    const displayTime = 8000; // وقت بقاء النص على الشاشة (8 ثواني)
 
-      function typeChar() {
-        if (charIndex &lt; text.length) {
-          textElement.textContent += text.charAt(charIndex);
-          charIndex++;
-          setTimeout(typeChar, speed);
-        } else {
-          // السطر اكتمل، انتقل للسطر التالي
-          lineIndex++;
-          setTimeout(typeLine, 1000); // تأخير بين السطور
-        }
-      }
-
-      typeChar();
+    // دالة لمسح كل الشاشة
+    function clearScreen() {
+      document.getElementById("line1").textContent = "";
+      document.getElementById("line2").textContent = "";
+      document.getElementById("line3").textContent = "";
+      document.getElementById("line4").textContent = "";
     }
 
-    // بدء تأثير الكتابة عند تحميل الصفحة
-    window.addEventListener("load", typeLine);
+    // دالة لكتابة النص حرفاً بحرف
+    function typeWriter(elementId, text) {
+      return new Promise(resolve => {
+        const el = document.getElementById(elementId);
+        let i = 0;
+        function type() {
+          if (i &lt; text.length) {
+            el.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, typeSpeed);
+          } else {
+            resolve(); // انتهت الكتابة
+          }
+        }
+        type();
+      });
+    }
+
+    // دالة للانتظار (8 ثواني)
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    // الدورة الرئيسية التي لا تنتهي
+    async function startAnimation() {
+      // إخفاء كل شيء في البداية
+      clearScreen();
+
+      while (true) {
+        // ===== المرحلة الأولى: النص العربي =====
+        await typeWriter("line1", textData.arabTitle); // يكتب العنوان العربي
+        await sleep(300); // استراحة قصيرة جداً للعين
+        await typeWriter("line3", textData.arabDesc); // يكتب الوصف العربي
+        
+        await sleep(displayTime); // ينتظر 8 ثواني
+        clearScreen(); // يمسح الشاشة
+
+        // ===== المرحلة الثانية: النص الإنجليزي =====
+        await typeWriter("line2", textData.engTitle); // يكتب العنوان الإنجليزي
+        await sleep(300); 
+        await typeWriter("line4", textData.engDesc); // يكتب الوصف الإنجليزي
+        
+        await sleep(displayTime); // ينتظر 8 ثواني
+        clearScreen(); // يمسح الشاشة لتبدأ الدورة من جديد
+      }
+    }
+
+    // تشغيل الدورة بمجرد تحميل الصورة
+    window.addEventListener("load", startAnimation);
   </script>
 </svg>
