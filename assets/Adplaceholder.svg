@@ -1,8 +1,6 @@
 <svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
-  <!-- الخلفية الداكنة الأساسية -->
   <rect width="1200" height="900" fill="#121212" />
 
-  <!-- تعريف تأثير الحركة (Shimmer Effect) -->
   <defs>
     <linearGradient id="shimmer" x1="-100%" y1="0" x2="0%" y2="0">
       <stop offset="0%" stop-color="#1E1E1E" />
@@ -11,55 +9,52 @@
       <animate attributeName="x1" values="-100%; 100%" dur="1.5s" repeatCount="indefinite" />
       <animate attributeName="x2" values="0%; 200%" dur="1.5s" repeatCount="indefinite" />
     </linearGradient>
-
-    <!-- تعريف القناع لتأثير الكتابة الدوري المتسلسل -->
-    <mask id="typewriter_mask">
-      <!-- مستطيل أبيض أساسي لضمان ظهور النص عندما يزول الحاجب -->
-      <rect x="0" y="0" width="1200" height="900" fill="white" />
-      
-      <!-- مستطيلات سوداء متحركة (حواجب) يغطون النص في البداية -->
-      <!-- السطر العربي 1: مساحة إعلانية متاحة -->
-      <rect id="shroud1" x="0" y="520" width="1200" height="60" fill="black">
-        <animate id="arab1_show" attributeName="x" values="1200; 0" dur="1.5s" begin="0.5s; english2_hide.end+0.5s" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.4, 0, 0.2, 1" />
-        <animate id="arab1_hide" attributeName="x" values="0; 1200" dur="1.5s" begin="arab1_show.end+1.5s" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.4, 0, 0.2, 1" />
-      </rect>
-      <!-- السطر الانجليزي 1: Advertising space available -->
-      <rect id="shroud2" x="0" y="580" width="1200" height="60" fill="black">
-        <animate id="english1_show" attributeName="x" values="-1200; 0" dur="1.5s" begin="arab1_hide.end+0.5s" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.4, 0, 0.2, 1" />
-        <animate id="english1_hide" attributeName="x" values="0; -1200" dur="1.5s" begin="english1_show.end+1.5s" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.4, 0, 0.2, 1" />
-      </rect>
-      <!-- السطر العربي 2: تواصل مع إدارة "صوان" لحجز هذه المساحة -->
-      <rect id="shroud3" x="0" y="650" width="1200" height="50" fill="black">
-        <animate id="arab2_show" attributeName="x" values="1200; 0" dur="1.5s" begin="english1_hide.end+0.5s" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.4, 0, 0.2, 1" />
-        <animate id="arab2_hide" attributeName="x" values="0; 1200" dur="1.5s" begin="arab2_show.end+1.5s" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.4, 0, 0.2, 1" />
-      </rect>
-      <!-- السطر الانجليزي 2: Contact Siwane management to reserve this space -->
-      <rect id="shroud4" x="0" y="700" width="1200" height="50" fill="black">
-        <animate id="english2_show" attributeName="x" values="-1200; 0" dur="1.5s" begin="arab2_hide.end+0.5s" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.4, 0, 0.2, 1" />
-        <animate id="english2_hide" attributeName="x" values="0; -1200" dur="1.5s" begin="english2_show.end+1.5s" repeatCount="indefinite" fill="freeze" calcMode="spline" keySplines="0.4, 0, 0.2, 1" />
-      </rect>
-    </mask>
   </defs>
 
-  <!-- تطبيق الحركة على المساحة بالكامل -->
   <rect width="1200" height="900" fill="url(#shimmer)" />
 
-  <!-- أيقونة الإضافة (بلون المتجر الأساسي) -->
   <g transform="translate(550, 320) scale(4)" fill="#00d1b2">
     <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
   </g>
 
-  <!-- تطبيق القناع على النصوص لتأثير الكتابة -->
-  <g mask="url(#typewriter_mask)">
-    <!-- العنوان الرئيسي مفصول لضمان التوسيط -->
-    <text x="600" y="550" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">مساحة إعلانية متاحة</text>
-    <text x="600" y="610" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">Advertising space available</text>
-    
-    <!-- الوصف مفصول لضمان التوسيط -->
-    <text x="600" y="680" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle">تواصل مع إدارة "صوان" لحجز هذه المساحة</text>
-    <text x="600" y="730" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle">Contact Siwane management to reserve this space</text>
-  </g>
+  <text id="line1" x="600" y="550" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">مساحة إعلانية متاحة</text>
+  <text id="line2" x="600" y="610" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">Advertising space available</text>
   
-  <!-- إطار خارجي خفيف -->
+  <text id="line3" x="600" y="680" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle">تواصل مع إدارة "صوان" لحجز هذه المساحة</text>
+  <text id="line4" x="600" y="730" font-family="sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle">Contact Siwane management to reserve this space</text>
+  
   <rect width="1196" height="896" x="2" y="2" fill="none" stroke="#333333" stroke-width="4" rx="16" />
+
+  <script type="application/javascript">
+    const lines = ["line1", "line2", "line3", "line4"];
+    const speeds = [150, 100, 80, 60]; // سرعات الكتابة بالملي ثانية
+    let lineIndex = 0;
+
+    function typeLine() {
+      if (lineIndex &gt;= lines.length) return;
+      const currentId = lines[lineIndex];
+      const speed = speeds[lineIndex];
+      const textElement = document.getElementById(currentId);
+      const text = textElement.textContent;
+      textElement.textContent = ""; // مسح النص الأصلي
+      let charIndex = 0;
+
+      function typeChar() {
+        if (charIndex &lt; text.length) {
+          textElement.textContent += text.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeChar, speed);
+        } else {
+          // السطر اكتمل، انتقل للسطر التالي
+          lineIndex++;
+          setTimeout(typeLine, 1000); // تأخير بين السطور
+        }
+      }
+
+      typeChar();
+    }
+
+    // بدء تأثير الكتابة عند تحميل الصفحة
+    window.addEventListener("load", typeLine);
+  </script>
 </svg>
