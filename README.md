@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/elhizazi1/ShizuCoreFetch/releases/latest"><img src="https://github.com/elhizazi1/ShizuCoreFetch/releases/latest" alt="Release"></a>
+  <a href="https://github.com/elhizazi1/ShizuCoreFetch/releases/latest"><img src="https://img.shields.io/github/v/release/elhizazi1/ShizuCoreFetch?label=Latest%20Release&style=flat-square" alt="Release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square" alt="License"></a>
   <a href="#"><img src="https://img.shields.io/badge/Platform-Android-6A1B9A?style=flat-square&logo=android" alt="Platform"></a>
   <a href="https://github.com/elhizazi1/ShizuCoreFetch"><img src="https://img.shields.io/github/stars/elhizazi1/ShizuCoreFetch?style=flat-square" alt="Stars"></a>
@@ -110,6 +110,9 @@ All user‑facing strings are translated into the following languages:
 | हिन्दी (Hindi) | ✅ Complete |
 | 中文 (Chinese) | ✅ Complete |
 | 日本語 (Japanese) | ✅ Complete |
+
+---
+
 ## 🛠️ Tech Stack
  * **Language:** Kotlin
  * **UI Architecture:** XML Layouts + ViewBinding + Material Design 3 Components
@@ -120,6 +123,9 @@ All user‑facing strings are translated into the following languages:
  * **Image Loading:** Coil (with custom rounded corner transformations)
  * **Cloud Backend:** Google Apps Script + Google Sheets API (for central catalog and blacklists)
  * **Build System:** Gradle
+ 
+---
+ 
 🤝 Contributing
 We welcome contributions! If you’d like to improve Shizu CoreFetch, please follow these steps:
  1. Fork the repo
@@ -128,16 +134,27 @@ We welcome contributions! If you’d like to improve Shizu CoreFetch, please fol
  4. Push to the branch (git push origin feature/amazing-feature)
  5. Open a Pull Request
 Read the full Contribution Guidelines for details on coding conventions and localization.
+
+
 ## Acknowledgments & Design Assets
 The user interface of Shizu CoreFetch relies on clean and professional iconography. The icons used throughout the application are sourced from the **Iconsax** library. To ensure optimal performance, crisp scaling across all screen densities, and memory efficiency on Android, all utilized icons were converted from their original formats into native Android Vector Drawable (XML) formats.
+
+
 ## 📜 License
 This project is licensed under the GNU General Public License v3.0 – see the LICENSE file for details.
+
+---
+
 ## 👤 Author & Contact
 Jamal El Hizazi
 · GitHub: @elhizazi1
 · Email: jamal@elhizazi.me
 · Website: Siwane.xyz
 For support or questions, open an issue on the repository or reach out via email.
+
+---
+
 <p align="center">
 Made with ❤️ for the Android community
 </p>
+
