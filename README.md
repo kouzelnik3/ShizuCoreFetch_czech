@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/elhizazi1/ShizuCoreFetch/releases/latest"><img src="https://img.shields.io/github/v/release/elhizazi1/ShizuCoreFetch?label=Latest%20Release&style=flat-square" alt="Release"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"></a>
+  <a href="https://github.com/elhizazi1/ShizuCoreFetch/releases/latest"><img src="https://github.com/elhizazi1/ShizuCoreFetch/releases/latest" alt="Release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square" alt="License"></a>
   <a href="#"><img src="https://img.shields.io/badge/Platform-Android-6A1B9A?style=flat-square&logo=android" alt="Platform"></a>
   <a href="https://github.com/elhizazi1/ShizuCoreFetch"><img src="https://img.shields.io/github/stars/elhizazi1/ShizuCoreFetch?style=flat-square" alt="Stars"></a>
 </p>
@@ -20,37 +20,33 @@
 
 ## 📖 Overview
 
-**Shizu CoreFetch** is a next‑generation application manager for Android that leverages the **Shizuku** API to perform silent installs, uninstalls, and background updates without requiring root access. It comes bundled with a local **APK wallet**, a centralized repository browser, GitHub authentication, and real‑time notifications — all wrapped in a clean, modern interface that supports light/dark themes and 8 languages.
+**Shizu CoreFetch** is a next‑generation application manager for Android that leverages the **Shizuku** API to perform silent installs, uninstalls, and background updates without requiring root access. It comes bundled with a local **APK wallet**, a centralized repository browser, GitHub authentication, and real‑time notifications — all wrapped in a clean, modern interface that supports light/dark themes and 9 languages.
 
 > ⚡ Perfect for power users, developers, and anyone tired of manual package management.
 
 ---
 
+> ⚠️ **Notice for Developers:** The source code currently available in this repository reflects stable version **1.0.0**. The latest ecosystem features of version **1.1.0** (such as the Comment System, App Ratings, and Whitelisted Banner Ads) are currently available exclusively in the compiled APK on the [Releases](https://github.com/elhizazi1/ShizuCoreFetch/releases) page. The repository source code will be fully synced soon.
+
+---
+
 ## ✨ Key Features
 
-- **Silent Operations with Shizuku**  
-  Install, uninstall, and update apps directly at system level — no user interaction needed once permissions are granted.
+- **Silent Operations with Shizuku** Install, uninstall, and update apps directly at system level — no user interaction needed once permissions are granted.
 
-- **Centralized Repository**  
-  Browse and fetch applications from a curated repository. Each app includes screenshots, description, developer info, and version history.
+- **Centralized Repository** Browse and fetch applications from a curated repository. Each app includes screenshots, description, developer info, and version history.
 
-- **Local Storage Wallet**  
-  Store downloaded APKs locally, share them via any app, or open them with external file viewers. Delete packages with a single tap to free up space.
+- **Local Storage Wallet** Store downloaded APKs locally, share them via any app, or open them with external file viewers. Delete packages with a single tap to free up space.
 
-- **Update Notifications**  
-  Receive alerts when new versions of your installed apps become available. Background checks ensure you never miss an update.
+- **Update Notifications** Receive alerts when new versions of your installed apps become available. Background checks ensure you never miss an update.
 
-- **GitHub Integration**  
-  Sign in with your GitHub account or continue as a guest. Your installed apps and update status are tied to your profile (optional).
+- **GitHub Integration** Sign in with your GitHub account or continue as a guest. Your installed apps and update status are tied to your profile (optional).
 
-- **Multi‑Language**  
-  Available in 8 languages: العربية, English, Français, Español, Português, Русский, हिन्दी, 中文.
+- **Multi‑Language** Available in 9 languages: العربية, English, Français, Español, Português, Русский, हिन्दी, 中文, 日本語.
 
-- **Dynamic Theming**  
-  Switch between Light, Dark, and System‑follow modes on the fly.
+- **Dynamic Theming** Switch between Light, Dark, and System‑follow modes on the fly.
 
-- **Privacy First**  
-  100% offline‑first architecture. No tracking, no analytics, no data collection. Your apps and data stay on your device.
+- **Privacy First** 100% offline‑first architecture. No tracking, no analytics, no data collection. Your apps and data stay on your device.
 
 ---
 
@@ -59,7 +55,7 @@
 <p align="center">
   <img src="assets/screen/screen1.png" width="180">
   <img src="assets/screen/screen2.png" width="180">
-  </p>
+</p>
 
 ---
 
@@ -94,15 +90,12 @@ Shizu CoreFetch uses the Shizuku Binder API to execute privileged commands direc
 
 The app itself runs without root, making it safe and compliant with modern Android security policies.
 
-```mermaid
+
 graph LR
     A[User Action] --> B{Shizuku Service}
     B -- Binder IPC --> C[System Server]
     C --> D[Package Manager]
     D --> E[Install/Uninstall/Update]
-```
-
----
 
 ## 🌍 Localization
 All user‑facing strings are translated into the following languages:
@@ -117,63 +110,34 @@ All user‑facing strings are translated into the following languages:
 | हिन्दी (Hindi) | ✅ Complete |
 | 中文 (Chinese) | ✅ Complete |
 | 日本語 (Japanese) | ✅ Complete |
-
----
-
 ## 🛠️ Tech Stack
- * Language: Kotlin
- * UI: XML Layouts + Material Design 3 Components
- * Networking: Retrofit 2 + OkHttp + GitHub REST API v3
- * Cloud Backend & Admin Panel: Google Apps Script + Google Sheets API
- * Image Loading: Coil (with crossfade and rounded transformations)
- * Rich Text Rendering: Markwon Markdown Library
- * Local Caching: Gson + Shared Preferences Architecture
-
----
-
+ * **Language:** Kotlin
+ * **UI Architecture:** XML Layouts + ViewBinding + Material Design 3 Components
+ * **Networking:** Retrofit 2 + OkHttp + Java HttpURLConnection (for direct GitHub REST API operations)
+ * **Local Caching & Storage:** SharedPreferences Architecture (via custom managers)
+ * **Concurrency:** Native Kotlin Threads + Android Main Looper Handlers
+ * **Rich Text Rendering:** Markwon Markdown Library (for Readme displaying)
+ * **Image Loading:** Coil (with custom rounded corner transformations)
+ * **Cloud Backend:** Google Apps Script + Google Sheets API (for central catalog and blacklists)
+ * **Build System:** Gradle
 🤝 Contributing
-
 We welcome contributions! If you’d like to improve Shizu CoreFetch, please follow these steps:
-
-1. Fork the repo
-2. Create a feature branch (git checkout -b feature/amazing-feature)
-3. Commit your changes (git commit -m 'Add amazing feature')
-4. Push to the branch (git push origin feature/amazing-feature)
-5. Open a Pull Request
-
+ 1. Fork the repo
+ 2. Create a feature branch (git checkout -b feature/amazing-feature)
+ 3. Commit your changes (git commit -m 'Add amazing feature')
+ 4. Push to the branch (git push origin feature/amazing-feature)
+ 5. Open a Pull Request
 Read the full Contribution Guidelines for details on coding conventions and localization.
-
----
-
 ## Acknowledgments & Design Assets
-
-The user interface of Drawix Pro relies on clean and professional iconography. The icons used throughout the application are sourced from the **[Iconsax](https://github.com/glenthemes/iconsax/tree/gh-pages)** library. To ensure optimal performance, crisp scaling across all screen densities, and memory efficiency on Android, all utilized icons were converted from their original formats into native Android Vector Drawable (XML) formats.
-
----
-
-> ⚠️ **Notice for Developers:** The source code currently available in this repository reflects stable version **1.0.0**. The latest features mentioned below (v1.1.0) are currently available as a compiled APK in the [Releases](#) section. The open-source code will be synced with v1.1.0 soon.
-
----
-
-
-📜 License
-
-This project is licensed under the MIT License – see the LICENSE file for details.
-
----
-
-👤 Author & Contact
-
+The user interface of Shizu CoreFetch relies on clean and professional iconography. The icons used throughout the application are sourced from the **Iconsax** library. To ensure optimal performance, crisp scaling across all screen densities, and memory efficiency on Android, all utilized icons were converted from their original formats into native Android Vector Drawable (XML) formats.
+## 📜 License
+This project is licensed under the GNU General Public License v3.0 – see the LICENSE file for details.
+## 👤 Author & Contact
 Jamal El Hizazi
-
 · GitHub: @elhizazi1
 · Email: jamal@elhizazi.me
 · Website: Siwane.xyz
-
 For support or questions, open an issue on the repository or reach out via email.
-
----
-
 <p align="center">
-  Made with ❤️ for the Android community
+Made with ❤️ for the Android community
 </p>
