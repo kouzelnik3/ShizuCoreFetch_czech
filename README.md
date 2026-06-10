@@ -146,10 +146,13 @@ This project is licensed under the GNU General Public License v3.0 – see the L
 ---
 
 ## 👤 Author & Contact
-Jamal El Hizazi
-· GitHub: @elhizazi1
-· Email: jamal@elhizazi.me
-· Website: Siwane.xyz
+
+**Jamal El Hizazi**
+
+- **GitHub:** [@elhizazi1](https://github.com/elhizazi1)
+- **Email:** jamal@elhizazi.me
+- **Website:** [Siwane.xyz](https://siwane.xyz)
+
 For support or questions, open an issue on the repository or reach out via email.
 
 ---
