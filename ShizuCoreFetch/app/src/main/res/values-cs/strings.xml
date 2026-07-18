@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- النصوص الأساسية -->
+    <string name="app_name">Shizu CoreFetch</string>
+    <string name="main_title">Shizu CoreFetch</string>
+    <string name="main_description">Pokročilá centralizovaná platforma pro načítání a správu aplikací vyžadujících základní oprávnění .</string>
+    <string name="main_login_github">Přihlásit se přes GitHub</string>
+    <string name="main_boredom_title">Vývojářské okno</string>
+    <string name="main_boredom_loading">Načítání dat...</string>
+    <string name="main_boredom_initial_quote">Čistý kód vždy působí jako dobře napsaný styl. - Robert C. Martin</string>
+    <string name="store_title">Shizu repozitář</string>
+    <string name="store_btn_install">Instalovat</string>
+    <string name="store_developer_prefix">: </string>
+    <string name="store_shizuku_not_running">Shizuku neběží. Prosím, začněte s tím nejdřív.</string>
+    <string name="store_shizuku_permission_denied">Pro základní operace je vyžadováno povolení Shizuku.</string>
+    <string name="store_shizuku_permission_granted">Shizuku se úspěšně spojilo.</string>
+    <string name="store_fetch_loading">Načítání aplikací...</string>
+    <string name="store_fetch_failed_parse">Nepodařilo se analyzovat data</string>
+    <string name="store_fetch_error_network">Chyba sítě:</string>
+    <string name="installer_no_permission">Žádné povolení Shizuku k instalaci.</string>
+    <string name="installer_success">Úspěšně nainstalováno!</string>
+    <string name="installer_fail">Instalace selhala: %1$s</string>
+    <string name="installer_error">Chyba: %1$s</string>
+    <string name="downloader_searching">Vyhledávání posledního vydání...</string>
+    <string name="downloader_no_apk">Žádné APK v tomto repozitáři nenalezeno.</string>
+    <string name="downloader_downloading">Stahování %1$s...</string>
+    <string name="downloader_success">Stahování dokončeno, zahájení tiché instalace...</string>
+    <string name="downloader_fail">Stahování selhalo: %1$s</string>
+    <string name="store_requesting_permission">Žádost o povolení Shizuku...</string>
+    <string name="install_button">Instalovat</string>
+    <string name="open_button">Otevřít</string>
+    <string name="store_cannot_open">Tuto aplikaci nelze otevřít</string>
+    <string name="tools_app_name">Název aplikace</string>
+    <string name="tools_app_developer">Jméno vývojáře</string>
+    <string name="tools_app_desc">Žádost o povolení Shizuku pro aplikaci jasně a úhledně zobrazující její hlavní funkce.</string>
+    <string name="installing_button">Instalování…</string>
+    <string name="uninstall_button">Odinstalovat</string>
+    <string name="update_button">Aktualizovat</string>
+    <string name="app_description_title">O této aplikaci</string>
+    <string name="app_versions_title">Verze</string>
+    <string name="uninstall_success">Úspěšně odinstalováno</string>
+    <string name="uninstall_fail">Odinstalace selhala: %1$s</string>
+    <string name="store_search_hint">Hledání aplikací…</string>
+    <string name="home_featured">Vybrané</string>
+    <string name="home_all_apps">Všechny aplikace</string>
+    <string name="login_guest">Procházet jako host</string>
+    <string name="nav_home">Domů</string>
+    <string name="nav_store">Obchod</string>
+    <string name="nav_account">Účet</string>
+    <string name="nav_settings">Nastavení</string>
+    <string name="account_loading">Načítání…</string>
+    <string name="account_guest_name">Host</string>
+    <string name="account_guest_email">Pro přístup ke všem funkcím se prosím přihlaste</string>
+    <string name="account_installed_apps">Installed applications</string>
+    <string name="account_no_installed_apps">Nebyly dosud nainstalované žádné aplikace z tohoto obchodu.</string>
+    <string name="account_updates_available">Dostupné aktualizace</string>
+    <string name="account_no_updates">Všechny vaše aplikace jsou aktuální.</string>
+    <string name="account_logout">Odhlásit</string>
+    <string name="screenshots_title">Snímky obrazovky</string>
+    <string name="preview_loading_text">Načítám data...</string>
+
+    <!-- نصوص الإعدادات الجديدة (بالإنجليزية للملف الافتراضي) -->
+    <string name="settings_theme_title">Motiv</string>
+    <string name="theme_light">Světlý</string>
+    <string name="theme_system">Tmavý</string>
+    <string name="theme_dark">Černý</string>
+
+    <string name="settings_lang_title">Jazyk</string>
+    <string name="lang_en">Angličtina</string>
+    <string name="lang_ar">Arabština</string>
+    <string name="lang_fr">Francouzština</string>
+    <string name="lang_es">Španělština</string>
+    <string name="lang_pt">Portugalština</string>
+    <string name="lang_ru">Ruština</string>
+    <string name="lang_hi">Hindština</string>
+    <string name="lang_zh">Čínština</string>
+    <string name="lang_ja">Japonština</string> 
+    
+    <string name="settings_notif_title">Notifikace</string>
+    
+    <string name="settings_permissions_title">Povolení</string>
+    <string name="settings_perm_apps">Informace o instalovaných aplikacích</string>
+    <string name="settings_perm_shizuku">Shizuku oprávnění</string>
+
+    <string name="settings_about_store">O obchodě</string>
+    <string name="settings_privacy">Zásady ochrany osobních údajů</string>
+    <string name="settings_terms">Podmínky používání</string>
+    <string name="settings_version">Verze 1.0.0</string>
+    <string name="settings_developer">Jamal El Hizazi</string>
+
+    <string name="dialog_theme_title">Zvolit motiv</string>
+    <string name="dialog_lang_title">Zvolit jazyk</string>
+
+    <string name="toast_shizuku_granted">Shizuku oprávnění je již uděleno</string>
+    <string name="toast_shizuku_not_running">Shizuku neběží. Prosíme  zapněte jej</string>
+    <string name="toast_shizuku_error">Chyba: Shizuku knihovna není dostupná</string>
+    
+        <string name="settings_category_general">Obecné</string>
+    <string name="settings_category_about">O</string>
+
+    <string name="notif_channel_ops_name">Práce a obchodem</string>
+    <string name="notif_channel_ops_desc">Notifikace pro stahování na pozadí a technické instalace.</string>
+    <string name="notif_channel_updates_name">Dostupné aktualizace</string>
+    <string name="notif_channel_updates_desc">Oznamovat, pokud bude dostupná aktualizace pro vaše aplikace.</string>
+    <string name="notif_updates_available_title">Dostupná aktualizace</string>
+    <string name="notif_updates_available_msg">Je dostupných %1$d aktualizací aplikací ke zpracování.</string>
+
+    <string name="nav_wallet">Lokální úložiště souborů</string>
+    <string name="wallet_empty">Žádné soubory aplikace se aktuálně nenachází v lokální cache.</string>
+    <string name="wallet_delete_title">Potvrdit smazání</string>
+    <string name="wallet_delete_msg">Opravdu chcete permanentně odstranit instalační balíček pro %1$s?</string>
+    <string name="wallet_delete_success">Balíček úspěšně odebrán.</string>
+    <string name="wallet_share_title">Sdílet balíček aplikace</string>
+    <string name="wallet_no_editor_found">Na tomto zařízení nebyl nalezen žádný kompatibilní prohlížeč balíčků ani editor.</string>
+    <string name="wallet_error_action">Selhalo zahájení operace požadavku souboru.</string>
+    <string name="wallet_btn_delete">Smazat</string>
+    <string name="wallet_btn_share">Sdílet</string>
+    <string name="wallet_btn_open">Otevřít externí</string>
+    <string name="dialog_cancel">Zrušit</string>
+    <string name="dialog_confirm">Potvrdit</string>
+
+</resources>
