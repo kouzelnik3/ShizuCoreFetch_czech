@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Temel metinler -->
+    <string name="app_name">Shizu CoreFetch</string>
+    <string name="main_title">Shizu CoreFetch</string>
+    <string name="main_description">Temel izinler gerektiren uygulamaları getirmek ve yönetmek için gelişmiş merkezi bir platform.</string>
+    <string name="main_login_github">GitHub ile Giriş Yap</string>
+    <string name="main_boredom_title">Geliştirici Penceresi</string>
+    <string name="main_boredom_loading">Veriler yükleniyor...</string>
+    <string name="main_boredom_initial_quote">Temiz kod her zaman iyi yazılmış bir düzyazı gibi okunur. - Robert C. Martin</string>
+    <string name="store_title">Shizu Deposu</string>
+    <string name="store_btn_install">Yükle</string>
+    <string name="store_developer_prefix">Yapan: </string>
+    <string name="store_shizuku_not_running">Shizuku motoru çalışmıyor. Lütfen önce başlatın.</string>
+    <string name="store_shizuku_permission_denied">Temel işlemler için Shizuku izni gereklidir.</string>
+    <string name="store_shizuku_permission_granted">Shizuku motoru başarıyla bağlandı.</string>
+    <string name="store_fetch_loading">Uygulamalar ağdan getiriliyor...</string>
+    <string name="store_fetch_failed_parse">Veri ayrıştırılamadı</string>
+    <string name="store_fetch_error_network">Ağ hatası:</string>
+    <string name="installer_no_permission">Kurulum için Shizuku izni yok.</string>
+    <string name="installer_success">Başarıyla yüklendi!</string>
+    <string name="installer_fail">Kurulum başarısız: %1$s</string>
+    <string name="installer_error">Hata oluştu: %1$s</string>
+    <string name="downloader_searching">En son sürüm aranıyor...</string>
+    <string name="downloader_no_apk">Bu depoda APK bulunamadı.</string>
+    <string name="downloader_downloading">%1$s indiriliyor...</string>
+    <string name="downloader_success">İndirme tamamlandı, sessiz kurulum başlatılıyor...</string>
+    <string name="downloader_fail">İndirme başarısız: %1$s</string>
+    <string name="store_requesting_permission">Shizuku izni isteniyor...</string>
+    <string name="install_button">Yükle</string>
+    <string name="open_button">Aç</string>
+    <string name="store_cannot_open">Bu uygulama açılamıyor</string>
+    <string name="tools_app_name">Uygulama Adı</string>
+    <string name="tools_app_developer">Geliştirici Adı</string>
+    <string name="tools_app_desc">Uygulamanın temel özelliklerini net ve düzenli bir şekilde gösteren kısa bir açıklama.</string>
+    <string name="installing_button">Yükleniyor…</string>
+    <string name="uninstall_button">Kaldır</string>
+    <string name="update_button">Güncelle</string>
+    <string name="app_description_title">Bu uygulama hakkında</string>
+    <string name="app_versions_title">Sürümler</string>
+    <string name="uninstall_success">Başarıyla kaldırıldı</string>
+    <string name="uninstall_fail">Kaldırma başarısız: %1$s</string>
+    <string name="store_search_hint">Uygulama ara…</string>
+    <string name="home_featured">Öne Çıkanlar</string>
+    <string name="home_all_apps">Tüm Uygulamalar</string>
+    <string name="login_guest">Misafir Olarak Göz At</string>
+    <string name="nav_home">Ana Sayfa</string>
+    <string name="nav_store">Mağaza</string>
+    <string name="nav_account">Hesap</string>
+    <string name="nav_settings">Ayarlar</string>
+    <string name="account_loading">Yükleniyor…</string>
+    <string name="account_guest_name">Misafir</string>
+    <string name="account_guest_email">Tüm özelliklere erişmek için lütfen giriş yapın</string>
+    <string name="account_installed_apps">Yüklü Uygulamalar</string>
+    <string name="account_no_installed_apps">Mağazadan henüz uygulama yüklenmemiş.</string>
+    <string name="account_updates_available">Güncellemeler Mevcut</string>
+    <string name="account_no_updates">Tüm uygulamalarınız güncel.</string>
+    <string name="account_logout">Çıkış Yap</string>
+    <string name="screenshots_title">Ekran Görüntüleri</string>
+    <string name="preview_loading_text">Veriler yükleniyor...</string>
+
+    <!-- Ayarlar metinleri -->
+    <string name="settings_theme_title">Tema</string>
+    <string name="theme_light">Açık</string>
+    <string name="theme_system">Sistem</string>
+    <string name="theme_dark">Koyu</string>
+
+    <string name="settings_lang_title">Dil</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_pt">Português</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="lang_zh">中文</string>
+    <string name="lang_ja">日本語</string>
+    <string name="lang_tr">Türkçe</string>
+    
+    <string name="settings_notif_title">Bildirimler</string>
+    
+    <string name="settings_permissions_title">İzinler</string>
+    <string name="settings_perm_apps">Yüklü Uygulama Bilgisi</string>
+    <string name="settings_perm_shizuku">Shizuku İzni</string>
+
+    <string name="settings_about_store">Mağaza Hakkında</string>
+    <string name="settings_privacy">Gizlilik Politikası</string>
+    <string name="settings_terms">Kullanım Koşulları</string>
+    <string name="settings_version">Sürüm 1.0.0</string>
+    <string name="settings_developer">Jamal El Hizazi tarafından</string>
+
+    <string name="dialog_theme_title">Tema Seç</string>
+    <string name="dialog_lang_title">Dil Seç</string>
+
+    <string name="toast_shizuku_granted">Shizuku izni zaten verilmiş</string>
+    <string name="toast_shizuku_not_running">Shizuku çalışmıyor, lütfen başlatın</string>
+    <string name="toast_shizuku_error">Hata: Shizuku kütüphanesi mevcut değil</string>
+    
+    <string name="settings_category_general">Genel</string>
+    <string name="settings_category_about">Hakkında</string>
+
+    <string name="notif_channel_ops_name">Mağaza İşlemleri</string>
+    <string name="notif_channel_ops_desc">Arka planda indirme ve teknik kurulum bildirimleri.</string>
+    <string name="notif_channel_updates_name">Mevcut Güncellemeler</string>
+    <string name="notif_channel_updates_desc">Yüklü uygulamalarınız için yeni sürümler mevcut olduğunda uyarılar.</string>
+    <string name="notif_updates_available_title">Güncellemeler Bulundu</string>
+    <string name="notif_updates_available_msg">İşlenmeye hazır %1$d uygulama güncellemesi var.</string>
+
+    <string name="nav_wallet">Yerel Depolama Cüzdanı</string>
+    <string name="wallet_empty">Yerel önbellekte şu anda depolanmış uygulama dosyası yok.</string>
+    <string name="wallet_delete_title">Silmeyi Onayla</string>
+    <string name="wallet_delete_msg">%1$s için kurulum paketini kalıcı olarak silmek istediğinize emin misiniz?</string>
+    <string name="wallet_delete_success">Paket başarıyla silindi.</string>
+    <string name="wallet_share_title">Uygulama Paketini Paylaş</string>
+    <string name="wallet_no_editor_found">Bu cihazda uyumlu bir paket görüntüleyici veya düzenleyici bulunamadı.</string>
+    <string name="wallet_error_action">İstenen dosya işlemi başlatılamadı.</string>
+    <string name="wallet_btn_delete">Sil</string>
+    <string name="wallet_btn_share">Paylaş</string>
+    <string name="wallet_btn_open">Harici Aç</string>
+    <string name="dialog_cancel">İptal</string>
+    <string name="dialog_confirm">Onayla</string>
+
+</resources>

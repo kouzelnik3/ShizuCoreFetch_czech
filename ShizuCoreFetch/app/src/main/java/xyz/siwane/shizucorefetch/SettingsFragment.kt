@@ -61,7 +61,7 @@ class SettingsFragment : Fragment() {
 
     private fun setupLanguageDialog() {
         binding.btnLanguage.setOnClickListener {
-            val languages = arrayOf("English", "العربية", "Français", "Español", "Português", "Русский", "हिन्दी", "中文", "日本語")
+            val languages = arrayOf("English", "العربية", "Français", "Español", "Português", "Русский", "हिन्दी", "中文", "日本語", "Türkçe")
             val langCodes = arrayOf(
                 LanguageManager.LANG_EN, 
                 LanguageManager.LANG_AR, 
@@ -71,7 +71,8 @@ class SettingsFragment : Fragment() {
                 LanguageManager.LANG_RU, 
                 LanguageManager.LANG_HI, 
                 LanguageManager.LANG_ZH,
-                LanguageManager.LANG_JA
+                LanguageManager.LANG_JA,
+                LanguageManager.LANG_TR
             )
 
             val currentLangCode = LanguageManager.getSavedLanguage(requireContext())
