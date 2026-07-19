@@ -26,18 +26,19 @@
 
 ---
 
-> ⚠️ **Notice for Developers:** The source code currently available in this repository reflects stable version **1.0.0**. The latest ecosystem features of version **1.1.0** (such as the Comment System, App Ratings, and Whitelisted Banner Ads) are currently available exclusively in the compiled APK on the [Releases](https://github.com/elhizazi1/ShizuCoreFetch/releases) page. The repository source code will be fully synced soon.
+> ⚠️ **Notice for Developers:** The source code currently available in this repository reflects stable version **1.0.0**. The latest ecosystem features of version **1.2.0** (such as Zero-Quota Architecture, the Comment System, App Ratings, and Whitelisted Banner Ads) are currently available exclusively in the compiled APK on the [Releases](https://github.com/elhizazi1/ShizuCoreFetch/releases) page. The repository source code will be fully synced soon.
 
 ---
 
 ## ✨ Key Features
 
-- **Silent Operations with Shizuku:** Install, uninstall, and update apps directly at system level — no user interaction needed once permissions are granted.
+- **Silent Operations with Shizuku:** Install, uninstall, and update apps directly at system level — fully supports both **Root** and Wireless Debugging (**ADB**).
+- **Zero-Quota Architecture:** Browse and download seamlessly without hitting GitHub API rate limits. The store handles high traffic effortlessly.
 - **Centralized Repository:** Browse and fetch applications from a curated repository. Each app includes screenshots, description, developer info, and version history.
 - **Local Storage Wallet:** Store downloaded APKs locally, share them via any app, or open them with external file viewers. Delete packages with a single tap to free up space.
 - **Update Notifications:** Receive alerts when new versions of your installed apps become available. Background checks ensure you never miss an update.
 - **GitHub Integration:** Sign in with your GitHub account or continue as a guest. Your installed apps and update status are tied to your profile (optional).
-- **Multi‑Language:** Available in 9 languages: العربية, English, Français, Español, Português, Русский, हिन्दी, 中文, 日本語.
+- **Multi‑Language:** Available in 11 languages: العربية, English, Français, Español, Português, Русский, हिन्दी, 中文, 日本語, Türkçe, Čeština.
 - **Dynamic Theming:** Switch between Light, Dark, and System‑follow modes on the fly.
 - **Privacy First:** 100% offline‑first architecture. No tracking, no analytics, no data collection. Your apps and data stay on your device.
 
